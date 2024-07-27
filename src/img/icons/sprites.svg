@@ -1,0 +1,36 @@
+<svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <symbol id="facebook" fill="none" viewBox="0 0 44 44">
+      <rect stroke="currentColor" x=".5" y=".5" width="43" height="43" rx="9.5" stroke-opacity=".1"/>
+      <path fill="currentColor" d="M25.08 12.06h.84v3.15h-1.05c-.42 0-.84 0-1.05.21-.21.21-.21.42-.21.91v1.12h2.31v2.66h-2.31v11.55h-3.57V20.04h-1.89v-2.66h1.89v-.91c0-1.54.21-2.66.63-3.15.63-.91 1.89-1.33 3.78-1.33.21.07.42.07.63.07Z" opacity=".8"/>
+    </symbol>
+    <symbol id="instagram" fill="none" viewBox="0 0 44 44">
+      <rect stroke="currentColor" x=".5" y=".5" width="43" height="43" rx="9.5" stroke-opacity=".1"/>
+      <g fill="currentColor" opacity=".8">
+        <path d="M33.128 17.412a8.096 8.096 0 0 0-.521-2.752 5.729 5.729 0 0 0-3.276-3.27 8.23 8.23 0 0 0-2.719-.522c-1.196-.053-1.576-.068-4.613-.068-3.038 0-3.427 0-4.615.068a8.23 8.23 0 0 0-2.718.522 5.725 5.725 0 0 0-3.275 3.27 8.13 8.13 0 0 0-.521 2.713c-.054 1.196-.07 1.575-.07 4.607 0 3.033 0 3.42.07 4.607.018.93.194 1.846.52 2.716a5.729 5.729 0 0 0 3.277 3.269 8.201 8.201 0 0 0 2.718.558c1.198.054 1.577.07 4.615.07 3.038 0 3.427 0 4.615-.07a8.211 8.211 0 0 0 2.719-.52 5.736 5.736 0 0 0 3.275-3.27 8.148 8.148 0 0 0 .521-2.715c.054-1.195.07-1.574.07-4.608-.003-3.032-.003-3.417-.072-4.605ZM21.99 27.715a5.745 5.745 0 0 1-5.75-5.741 5.744 5.744 0 0 1 5.75-5.741c3.175 0 5.75 2.57 5.75 5.74a5.746 5.746 0 0 1-5.75 5.742Zm5.98-10.356a1.338 1.338 0 1 1 0-2.677 1.339 1.339 0 1 1 0 2.677Z"/>
+        <path d="M21.993 25.479a3.504 3.504 0 1 0 0-7.007 3.504 3.504 0 0 0 0 7.007Z"/>
+      </g>
+    </symbol>
+    <symbol id="youtube" fill="none" viewBox="0 0 44 44">
+      <rect stroke="currentColor" x=".5" y=".5" width="43" height="43" rx="9.5" stroke-opacity=".1"/>
+      <path fill="currentColor" fill-rule="evenodd" clip-rule="evenodd" d="M29.21 13.25c-1.19-.07-3.64-.14-7.35-.14h-.49c-3.57 0-5.95.07-7.14.21-1.61.14-2.73.56-3.36 1.12-.56.49-.98 1.4-1.12 2.59-.07.77-.14 2.38-.14 4.83v.35c0 2.31.07 3.92.21 4.69.21 1.12.56 1.96 1.26 2.45.7.56 1.89.91 3.57 1.05 1.19.07 3.64.14 7.35.14h.49c3.57 0 5.95-.07 7.14-.21 1.61-.14 2.73-.56 3.36-1.12.56-.49.98-1.4 1.12-2.59.07-.77.14-2.38.14-4.83v-.35c0-2.31-.07-3.92-.21-4.69-.21-1.12-.56-1.96-1.26-2.45-.7-.56-1.89-.91-3.57-1.05Zm-2.73 8.61-7.7 4.62v-9.24l7.7 4.62Z" opacity=".8"/>
+    </symbol>
+    <symbol id="burger40" viewBox="0 0 40 28">
+      <path stroke="currentColor" stroke-width="3" stroke-linecap="round" d="M7.587 4.439H38.5M7.587 21.409H38.5M17.152 12.924H38.5"/>
+    </symbol>
+    <symbol id="burger32" viewBox="0 0 32 32">
+      <path stroke="currentColor" stroke-width="3" stroke-linecap="round" d="M6.37 8.379H30.5M6.37 22.318H30.5M14.022 15.348H30.5"/>
+    </symbol>
+    <symbol id="close" viewBox="0 0 40 40">
+      <path stroke="#ffffff" d="M30 10 10 30M10 10l20 20" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+    </symbol>
+    <symbol id="checkmark" viewBox="0 0 28 28">
+      <circle fill="currentColor" cx="14" cy="14" r="14"/>
+      <path stroke="#ffffff" d="M20.667 9 11.5 18.167 7.333 14" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    </symbol>
+    <symbol id="downarrow" viewBox="0 0 48 48">
+      <circle fill="#ffffff" cx="24" cy="24" transform="matrix(0 1 1 0 0 0)" r="24"/>
+      <path fill="currentColor" d="M24.71 25.4a1 1 0 0 1-1.42 0l-4.58-4.59a1 1 0 1 0-1.42 1.41l4.59 4.59a3 3 0 0 0 4.24 0l4.59-4.59a1 1 0 0 0-1.42-1.41l-4.58 4.59Z"/>
+    </symbol>
+  </defs>
+</svg>
