@@ -145,6 +145,18 @@
         color: $black;
         background-color: $white;
         text-decoration: none;
+        transition: box-shadow $animation,color $animation;
+        border-radius: 10px;
+
+        &:hover,
+        &:focus {
+            color: $green;
+            box-shadow: 2px 2px 4px $green;
+        }
+
+        // &:hover>.icon,
+        // &:focus>.icon {
+        // }
 
         & .icon {
             display: block;
