@@ -1,0 +1,132 @@
+.logo {
+    margin: 0;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 1.37;
+    text-align: left;
+    color: $black;
+
+    &>.accent {
+        color: $green;
+    }
+}
+
+.icon-button {
+    margin: 0;
+    padding: 0;
+
+    border: none;
+    outline: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.burger-menu {
+    @extend .icon-button;
+
+    width: 32px;
+    height: 32px;
+
+    color: $black;
+
+    @include tablet {
+        width: 40px;
+        height: 40px;
+    }
+
+    @include desktop {
+        display: none;
+    }
+}
+
+.burger-menu-icon {
+    top: 0;
+    right: 0;
+    margin: 0;
+    padding: 0;
+
+    width: 32px;
+    height: 32px;
+
+    @include tablet {
+        width: 40px;
+        height: 40px;
+    }
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0;
+    outline: none;
+
+    height: 67px;
+    margin-bottom: 8px;
+
+    @include tablet {
+        height: 68px;
+        margin-bottom: 32px;
+    }
+
+    @include desktop {
+        height: 84px;
+        margin-bottom: 16px;
+    }
+
+    &>.nav-items {
+        margin: 0;
+        padding: 0;
+
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 20px;
+
+        list-style: none;
+        font-weight: 600;
+        line-height: 18px;
+
+        display: none;
+
+        @include desktop {
+            display: flex;
+        }
+    }
+
+    & .nav-link {
+        color: $black;
+        text-decoration: none;
+        font-weight: 600;
+    }
+
+    &>.soc-items {
+        margin: 0;
+        padding: 0;
+
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        gap: 20px;
+        list-style: none;
+
+        display: none;
+
+        @include desktop {
+            display: flex;
+        }
+    }
+
+    & .soc-link {
+        display: block;
+        color: $black;
+        background-color: $white;
+        text-decoration: none;
+
+        & .icon {
+            width: 44px;
+            height: 44px;
+        }
+    }
+}
