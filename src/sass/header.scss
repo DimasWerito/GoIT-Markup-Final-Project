@@ -101,8 +101,8 @@
         text-decoration: none;
         font-weight: 600;
 
-        &:hover::before,
-        &:focus::before {
+        &::before,
+        &::before {
             content: '';
             position: absolute;
             left: 0;
@@ -110,8 +110,15 @@
             display: block;
             width: 37px;
             height: 4px;
-            background-color: $green;
             border-radius: 2px;
+            transform: scaleY(0) translateY(-10);
+            transition: transform $animation;
+            background-color: $green;
+        }
+
+        &:hover::before,
+        &:focus::before {
+            transform: scaleY(1) translateY(0);
         }
     }
 
