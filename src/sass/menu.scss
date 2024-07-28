@@ -1,0 +1,135 @@
+body:has(.menu.is-open) {
+    overflow: hidden;
+}
+
+.menu-backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(18, 20, 23, 0.4);
+
+    pointer-events: none;
+    opacity: 0;
+
+    transition: opacity $animation $animation-delay;
+}
+
+.menu-backdrop:has(.menu.is-open) {
+    transition: opacity $animation;
+    opacity: 1;
+    pointer-events: auto;
+
+    @include desktop {
+        display: none;
+        pointer-events: none;
+    }
+}
+
+.close-btn {
+    @extend .icon-button;
+
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    width: 32px;
+    height: 32px;
+
+    color: $white;
+    cursor: pointer;
+
+    @include tablet {
+        width: 40px;
+        height: 40px;
+    }
+}
+
+.close-btn-icon {
+    color: $white;
+    width: 100%;
+    height: 100%;
+}
+
+.menu {
+    position: fixed;
+    top: 0;
+    right: 0;
+    overflow-y: auto;
+    width: 240px;
+    height: 100vh;
+
+    display: flex;
+    opacity: 0;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+
+    background-color: $green;
+    transform: translateX(101%);
+    transition: transform $animation, opacity $animation $animation-delay;
+
+    @include tablet {
+        padding: 32px;
+        width: 384px;
+    }
+
+    &.is-open {
+        opacity: 1;
+        transform: translateX(0);
+        transition: transform $animation, opacity $animation;
+    }
+
+    &>.nav-items {
+        margin: 0;
+        padding: 0 0 160px;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+
+        list-style: none;
+
+        @include tablet {
+            padding: 0 0 160px;
+        }
+    }
+
+    & .nav-link {
+        color: $white;
+        text-decoration: none;
+        font-weight: 600;
+        line-height: 18px;
+    }
+
+    &>.soc-items {
+        margin: 0;
+        padding: 0;
+
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+        gap: 12px;
+
+        list-style: none;
+    }
+
+    & .soc-link {
+        display: block;
+        color: $white;
+        text-decoration: none;
+
+        & .icon {
+            width: 42px;
+            height: 42px;
+
+            @include tablet {
+                width: 44px;
+                height: 44px;
+            }
+        }
+    }
+}
