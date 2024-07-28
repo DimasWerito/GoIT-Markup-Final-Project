@@ -96,10 +96,12 @@
     }
 
     & .nav-link {
+        display: block;
         position: relative;
         color: $black;
         text-decoration: none;
         font-weight: 600;
+        transition: transform $animation;
 
         &::before,
         &::before {
@@ -114,6 +116,11 @@
             transform: scaleY(0) translateY(-10);
             transition: transform $animation;
             background-color: $green;
+        }
+
+        &:hover,
+        &:focus {
+            transform: translateY(-1px);
         }
 
         &:hover::before,
@@ -145,18 +152,14 @@
         color: $black;
         background-color: $white;
         text-decoration: none;
-        transition: box-shadow $animation,color $animation;
+        transition: box-shadow $animation, transform $animation;
         border-radius: 10px;
 
         &:hover,
         &:focus {
-            color: $green;
-            box-shadow: 2px 2px 4px $green;
+            box-shadow: 0 1px 4px $green;
+            transform: translateY(-1px);
         }
-
-        // &:hover>.icon,
-        // &:focus>.icon {
-        // }
 
         & .icon {
             display: block;

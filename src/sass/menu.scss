@@ -99,10 +99,17 @@ body:has(.menu.is-open) {
     }
 
     & .nav-link {
+        display: block;
         color: $white;
         text-decoration: none;
         font-weight: 600;
         line-height: 18px;
+        transition: transform $animation;
+
+        &:hover,
+        &:focus {
+            transform: scale(1.1) translateY(-1px);
+        }
     }
 
     &>.soc-items {
@@ -122,8 +129,17 @@ body:has(.menu.is-open) {
         display: block;
         color: $white;
         text-decoration: none;
+        border-radius: 10px;
+        transition: box-shadow $animation, transform $animation;
+
+        &:hover,
+        &:focus {
+            box-shadow: 0 1px 4px $light-green;
+            transform: translateY(-1px);
+        }
 
         & .icon {
+            display: block;
             width: 42px;
             height: 42px;
 
