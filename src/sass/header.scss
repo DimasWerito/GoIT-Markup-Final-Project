@@ -96,9 +96,23 @@
     }
 
     & .nav-link {
+        position: relative;
         color: $black;
         text-decoration: none;
         font-weight: 600;
+
+        &:hover::before,
+        &:focus::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: -4px;
+            display: block;
+            width: 37px;
+            height: 4px;
+            background-color: $green;
+            border-radius: 2px;
+        }
     }
 
     &>.soc-items {
