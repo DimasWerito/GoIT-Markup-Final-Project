@@ -1,14 +1,14 @@
-.logo {
+.header-logo {
     margin: 0;
     font-weight: 700;
     font-size: 20px;
     line-height: 1.37;
     text-align: left;
     color: $black;
+}
 
-    &>.accent {
-        color: $green;
-    }
+.header-logo_accent {
+    color: $green;
 }
 
 .icon-button {
@@ -58,8 +58,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 0;
-    outline: none;
+    padding: 0 20px ;
 
     height: 67px;
     margin-bottom: 8px;
@@ -67,11 +66,13 @@
     @include tablet {
         height: 68px;
         margin-bottom: 32px;
+        padding: 0 32px ;
     }
 
     @include desktop {
         height: 84px;
         margin-bottom: 16px;
+        padding: 0 128px ;
     }
 
     &>.nav-items {
