@@ -2,10 +2,10 @@
   "name": "parcel-project-template",
   "version": "1.0.0",
   "description": "",
-  "homepage": "https://aegisvp.github.io/goit-markup-final",
+  "homepage": "https://DimasWerito.github.io/GoIT-Markup-Final-Project",
   "scripts": {
     "start": "parcel src/*.html",
-    "build": "parcel build src/*.html --public-url /goit-markup-final/"
+    "build": "parcel build src/*.html --public-url /GoIT-Markup-Final-Project/"
   },
   "repository": {
     "type": "git",
