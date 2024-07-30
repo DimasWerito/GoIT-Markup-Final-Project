@@ -12,11 +12,60 @@
     
 
     <script type="module" crossorigin src="/GoIT-Markup-Final-Project/commonHelpers.js"></script>
-    <link rel="stylesheet" href="/GoIT-Markup-Final-Project/assets/index-9ce8932e.css">
+    <link rel="stylesheet" href="/GoIT-Markup-Final-Project/assets/index-4be5237f.css">
   </head>
   <body>
     <header class="section header">
-    ...header...
+  <p class="header-logo">english<span class="header-logo_accent">excellence</span>.</p>
+
+  <ul class="nav-items">
+  <li class="nav-item">
+    <a href="#about" class="nav-link">About us</a>
+  </li>
+  <li class="nav-item">
+    <a href="#lessons" class="nav-link">Our lessons</a>
+  </li>
+  <li class="nav-item">
+    <a href="#teachers" class="nav-link">Teachers</a>
+  </li>
+  <li class="nav-item">
+    <a href="#feedback" class="nav-link">Reviews</a>
+  </li>
+  <li class="nav-item">
+    <a href="#contact" class="nav-link">Contact us</a>
+  </li>
+</ul>
+
+<ul class="soc-items">
+  <li class="soc-item">
+    <a href="https://www.facebook.com/goITclub/" class="soc-link" target="_blank">
+      <svg class="icon">
+        <use href="/GoIT-Markup-Final-Project/assets/sprites-709cfff0.svg#facebook"></use>
+      </svg>
+    </a>
+  </li>
+  <li class="soc-item">
+    <a href="https://www.instagram.com/goitclub/ " class="soc-link" target="_blank">
+      <svg class="icon">
+        <use href="/GoIT-Markup-Final-Project/assets/sprites-709cfff0.svg#instagram"></use>
+      </svg>
+    </a>
+  </li>
+  <li class="soc-item">
+    <a href="https://www.youtube.com/c/GoIT" class="soc-link" target="_blank">
+      <svg class="icon">
+        <use href="/GoIT-Markup-Final-Project/assets/sprites-709cfff0.svg#youtube"></use>
+      </svg>
+    </a>
+  </li>
+</ul>
+
+
+  <button type="button" class="burger-menu" onclick="toggleMenu();">
+    <svg class="burger-menu-icon">
+      <use href="/GoIT-Markup-Final-Project/assets/sprites-709cfff0.svg#burger32"></use>
+    </svg>
+  </button>
 </header>
 
     <main>
@@ -53,9 +102,60 @@
     ...footer...
 </footer>
 
-    <div class="menu">
-    ...menu...
+    <div class="menu-backdrop">
+  <div class="menu">
+    <div class="button-wrapper">
+      <button type="button" class="close-btn" onclick="toggleMenu();">
+        <svg class="close-btn-icon">
+          <use href="/GoIT-Markup-Final-Project/assets/sprites-709cfff0.svg#close"></use>
+        </svg>
+      </button>
+    </div>
+    <ul class="nav-items">
+  <li class="nav-item">
+    <a href="#about" class="nav-link">About us</a>
+  </li>
+  <li class="nav-item">
+    <a href="#lessons" class="nav-link">Our lessons</a>
+  </li>
+  <li class="nav-item">
+    <a href="#teachers" class="nav-link">Teachers</a>
+  </li>
+  <li class="nav-item">
+    <a href="#feedback" class="nav-link">Reviews</a>
+  </li>
+  <li class="nav-item">
+    <a href="#contact" class="nav-link">Contact us</a>
+  </li>
+</ul>
+
+<ul class="soc-items">
+  <li class="soc-item">
+    <a href="https://www.facebook.com/goITclub/" class="soc-link" target="_blank">
+      <svg class="icon">
+        <use href="/GoIT-Markup-Final-Project/assets/sprites-709cfff0.svg#facebook"></use>
+      </svg>
+    </a>
+  </li>
+  <li class="soc-item">
+    <a href="https://www.instagram.com/goitclub/ " class="soc-link" target="_blank">
+      <svg class="icon">
+        <use href="/GoIT-Markup-Final-Project/assets/sprites-709cfff0.svg#instagram"></use>
+      </svg>
+    </a>
+  </li>
+  <li class="soc-item">
+    <a href="https://www.youtube.com/c/GoIT" class="soc-link" target="_blank">
+      <svg class="icon">
+        <use href="/GoIT-Markup-Final-Project/assets/sprites-709cfff0.svg#youtube"></use>
+      </svg>
+    </a>
+  </li>
+</ul>
+
+  </div>
 </div>
 
+<script src="./js/menu.js"></script>
   </body>
 </html>
