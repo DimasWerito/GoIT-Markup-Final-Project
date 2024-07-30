@@ -1,4 +1,4 @@
-@import '~node_modules/modern-normalize/modern-normalize.css';
+@import 'node_modules/modern-normalize/modern-normalize.css';
 
 body {
     padding: 0;
@@ -10,6 +10,7 @@ body {
     font-weight: 400;
     font-style: normal;
 }
+
 section,
 .section {
     margin: 0 auto 150px;
@@ -18,13 +19,13 @@ section,
     min-width: 320px;
     max-width: 375px;
 
-    @include tablet {
+    @media screen and (min-width: 768px) {
         max-width: 768px;
     }
 
-    @include desktop {
+    @media screen and (min-width: 1280px) {
         max-width: 1280px;
     }
 
-    outline: $outline;
+    outline: 1px solid tomato;
 }
