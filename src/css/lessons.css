@@ -1,0 +1,214 @@
+
+.lessons{
+    outline: none;
+    padding: 20px;
+}
+
+.lessons__title-lg, .lessons__text-price{
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 36px;
+    text-align: center;
+    color: #121417;
+    margin-top: 0;
+    margin-bottom: 16px;
+}
+
+.lessons__title-lg-green-underline{
+    display: inline-block;
+    position: relative;
+}
+
+.lessons__title-lg-green-underline::after{
+    content: "";
+    width: 100%;
+    height: 12px;
+    border-radius:8px;
+    background-color:rgba(190, 232, 204, 1);
+    display: inline-block;
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    z-index: -1;
+}
+
+.lessons__text-main{
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    text-align: center;
+    color:#12141780;
+    margin: 0 0 40px;
+}
+
+.lessons__btn-main{
+    display: block;
+}
+
+.lessons__card-list{
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin: 0;
+    padding: 0px;
+}
+
+.lessons__card-lesson{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 40px 20px;
+    text-align: center;
+    border: 1px solid #4DC274;
+    border-radius:14px;
+    max-width: 336px;
+}
+
+.lessons__wrap-btn{
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.lessons__title-sm{
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+    color:#121417;
+    margin: 0px 0 16px;
+}
+
+.lessons__card-lesson .lessons__title-lg{
+    margin-bottom: 40px;
+}
+
+.lessons__card-lesson .lessons__text-main{
+    margin-bottom: 20px;
+}
+
+.lessons__card-lesson .lessons__btn-main{
+    padding: 14px;
+    border-radius: 12px;
+    background-color: #4DC274;
+    color: #ffffff;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 24px;
+    text-decoration: none;
+    transition: all .4s ease;
+}
+
+.lessons__card-lesson .lessons__btn-main:hover, .lessons__card-lesson .lessons__btn-main:active, .lessons__card-lesson .lessons__btn-main:focus{
+    background-color: #38AE5F;
+}
+
+.lessons__card-lesson.lessons__card-lesson--selected{
+    background-color:#4DC274;
+    color:#ffffff;
+}
+
+.lessons__card-lesson.lessons__card-lesson--selected .lessons__btn-main:hover, .lessons__card-lesson.lessons__card-lesson--selected .lessons__btn-main:active, .lessons__card-lesson.lessons__card-lesson--selected .lessons__btn-main:focus{
+    background-color: white;
+    color: #4DC274;
+}
+
+.lessons__card-lesson.lessons__card-lesson--selected .lessons__title-sm, 
+.lessons__card-lesson.lessons__card-lesson--selected .lessons__title-lg,
+.lessons__card-lesson.lessons__card-lesson--selected .lessons__text-main,
+.lessons__card-lesson.lessons__card-lesson--selected .lessons__text-price {
+    color:#ffffff;
+}
+
+.lessons__card-lesson.lessons__card-lesson--selected .lessons__btn-main{
+    border: 1px solid #ffffff;
+}
+
+@media (min-width:375px){
+    .lessons__card-lesson .lessons__btn-main{
+        bottom: 40px;      
+    }
+}
+
+@media (min-width:768px){
+    .lessons__title-lg{
+        font-size: 40px;
+        line-height: 48px;
+    }
+
+    .lessons__title-lg-green-underline::after{
+        height: 20px;
+    }
+
+    .lessons__text-main{
+        font-size: 18px;
+        line-height: 30px;
+        margin-bottom: 64px;
+    }
+
+    .lessons__card-list{
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap:32px;
+        max-width: 704px;
+        margin: auto;
+    }
+
+    .lessons__card-lesson{
+        flex: 0 0 336px;
+        padding: 32px 16px;
+    }
+
+    .lessons__text-price{
+        font-size: 32px;
+        line-height: 44px;
+        margin-bottom: 32px;
+    }
+
+    .lessons__card-lesson .lessons__text-main{
+        font-size: 16px;
+        line-height: 24px;
+        margin-bottom: 32px;
+    }
+
+    .lessons__card-lesson .lessons__btn-main{
+        bottom:32px;
+        left: 16px;
+        right: 16px;
+    }
+
+    .lessons__card-lesson .lessons__btn-main{
+        font-size: 18px;
+        line-height: 28px;
+        padding: 16px;
+        left: 32px;
+        right: 32px;
+    }
+}
+
+@media (min-width:1280px){
+    .lessons__text-main{
+        max-width: 665px;
+        margin: 0 auto 64px;
+    }
+
+    .lessons__card-list{
+        max-width: 100%;
+        justify-content: center;
+    }
+
+    .lessons__card-lesson{
+        flex: 0 0 320px;
+        padding: 32px;
+    }
+
+    .lessons__text-price{
+        margin-bottom: 16px;
+    }
+
+    .lessons__card-lesson .lessons__text-main{
+        margin: 0 0 40px;
+        width: auto;
+    }
+}
