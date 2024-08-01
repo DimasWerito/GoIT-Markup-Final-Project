@@ -4,7 +4,7 @@
 
 /* #region Title block */
 .application-title {
-  margin: 0 auto;
+    margin: 0 auto;
 }
 .application-head {
     font-weight: 700;
@@ -76,6 +76,9 @@
 /* #endregion */
 
 /* #region Inputs block*/
+.application-inputs {
+    margin: 0 auto;
+}
 .application-form-field {
     margin-bottom: 16px;
 }
@@ -188,8 +191,8 @@ input[type='radio']:focus-visible + .application-radio-label > .application-radi
     box-shadow: 0 0 4px 2px rgba(77, 194, 116, 25);
 }
 input[type='radio']:hover + .application-radio-label > .application-radio-input {
-  border-color: var(--color-green);
-  box-shadow: 0 0 4px 2px rgba(77, 194, 116, 25);
+    border-color: var(--color-green);
+    box-shadow: 0 0 4px 2px rgba(77, 194, 116, 25);
 }
 /* #endregion */
 
@@ -254,6 +257,9 @@ input[type='radio']:hover + .application-radio-label > .application-radio-input 
         font-size: 18px;
         line-height: 1.67;
     }
+    .application-inputs {
+        margin: 0 auto 32px;
+    }
     .application-form-field {
         margin-bottom: 18px;
     }
@@ -295,9 +301,9 @@ input[type='radio']:hover + .application-radio-label > .application-radio-input 
         line-height: 1.56;
     }
     .application-form-desc {
-      font-size: 14px;
-      line-height: 1.71;
-  }
+        font-size: 14px;
+        line-height: 1.71;
+    }
 }
 
 @media screen and (min-width: 1280px) {
@@ -308,13 +314,13 @@ input[type='radio']:hover + .application-radio-label > .application-radio-input 
         padding: 0;
     }
     .application-title {
-      width: 1024px;
-      margin: 0 auto;
+        width: 1024px;
+        margin: 0 auto;
     }
     .application-p {
-      width: 709px;
-      margin: 0 auto 64px;
-  }
+        width: 709px;
+        margin: 0 auto 64px;
+    }
     .application-picture {
         display: block;
     }
