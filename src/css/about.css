@@ -56,22 +56,26 @@
     align-items: center;
 }
 .about-item {
+    counter-increment: count;
     padding: 32px;
     border-radius: 16px;
     width: 100%;
     height: 160px;
     background: var(--color-gray);
 }
-.about-item-title {
-    margin: 0 auto 16px;
+.about-item:before {
+    content: counter(count);
     font-weight: 700;
     font-size: 28px;
     line-height: 1.14;
     letter-spacing: -0.02em;
     color: var(--color-green);
 }
+.about-item:nth-child(-n + 9):before {
+    content: '0' counter(count);
+}
 .about-item-p {
-    margin: 0 auto;
+    margin: 16px auto 0 0;
     font-weight: 700;
     font-size: 20px;
     line-height: 1.2;
