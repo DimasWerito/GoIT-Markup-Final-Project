@@ -1,0 +1,179 @@
+.hero-wrapper {
+    background-image: url(../img/hero/desktop-1x.jpg);
+    max-width: 1152px;
+    height: 629px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    padding: 164px 32px 32px 64px;
+    position: relative;
+}
+
+.hero-title {
+    color: white;
+    font-size: 60px;
+    font-weight: 700;
+    line-height: 1.17;
+    width: 564px;
+    margin: 0;
+    margin-bottom: 32px;
+}
+
+.hero-title-accent {
+    color: #BEE8CC;
+}
+
+.hero-button {
+    padding: 16px 64px;
+    max-width: 306px;
+    height: 60px;
+    border-radius: 12px;
+    background-color: #4DC274;
+    outline: none;
+    border: none;
+    color: white;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 1.16;
+}
+
+.hero-button:hover,
+.hero-button:focus {
+    background-color: #38AE5F;
+}
+
+.hero-scroll-down {
+    margin-top: 83px;
+}
+
+.scroll-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    background-color: white;
+    margin-left: auto;
+}
+
+.scroll-icon:hover,
+.scroll-icon:focus {
+    fill: white;
+}
+
+.scroll-button:hover,
+.scroll-button:focus {
+    background-color: #4DC274;
+}
+
+@media screen and (min-width:375px) {
+    .hero-wrapper {
+            background-image: url(../img/hero/mobile-1x.jpg);
+            max-width: 100%;
+            height: 709px;
+            padding: 425px 14px 14px 20px;
+        }
+
+        .hero-title {
+            color: white;
+            font-size: 38px;
+            line-height: 1.05;
+            width: 295px;
+            margin-bottom: 40px;
+        }
+
+        .hero-button {
+            padding: 14px 87px;
+            max-width: 313px;
+            height: 52px;
+            font-size: 14px;
+            line-height: 1.71;
+        }
+
+        .hero-scroll-down {
+            margin-top: 20px;
+        }
+
+        .scroll-button {
+            width: 38px;
+            height: 38px;
+            position: absolute;
+            bottom: 14px;
+            right: 14px;
+        }
+
+        .scroll-icon {
+            width: 20px;
+            height: 20px;
+        }
+}
+
+@media screen and (min-width: 768px) {
+    .hero-wrapper {
+            background-image: url(../img/hero/tablet-1x.jpg);
+            height: 857px;
+            padding: 260px 32px 32px 32px;
+            border-radius: 30px;
+            width: 100%;
+        }
+    
+    .hero-title {
+        width: 488px;
+        font-size: 60px;
+    }
+
+    .scroll-button {
+        width: 38px;
+        height: 38px;
+    }
+
+    .hero-button {
+        font-size: 18px;
+        width: 306px;
+        height: 60px;
+        line-height: 1.56;
+        padding: 16px 64px;
+    }
+
+    .scroll-button {
+        position: absolute;
+        bottom: 32px;
+        right: 32px;
+    }
+}
+
+@media screen and (min-width: 1280px) {
+    .hero-wrapper {
+            background-image: url(../img/hero/desktop-1x.jpg);
+            border-radius: 30px;
+            width: 100%;
+        }
+
+        .hero-title {
+            width: 564px;
+            font-size: 60px;
+        }
+
+        .scroll-button {
+            width: 38px;
+            height: 38px;
+        }
+
+        .hero-button {
+            font-size: 18px;
+            width: 306px;
+            height: 60px;
+            line-height: 1.56;
+            padding: 16px 64px;
+        }
+
+        .scroll-button {
+            position: absolute;
+            bottom: 32px;
+            right: 32px;
+        }
+}
