@@ -12,7 +12,7 @@
     
 
     <script type="module" crossorigin src="/GoIT-Markup-Final-Project/commonHelpers.js"></script>
-    <link rel="stylesheet" href="/GoIT-Markup-Final-Project/assets/index-fd80ebef.css">
+    <link rel="stylesheet" href="/GoIT-Markup-Final-Project/assets/index-600b4012.css">
   </head>
   <body>
     <header class="section header">
@@ -193,12 +193,7 @@
   </div>
   <div class="application-block">
     <div class="application-picture">
-      <img srcset="
-      ../img/application/1x.png 1x,
-      ../img/application/2x.png 2x,
-      ../img/application/3x.png 3x
-    " src="../img/application/1x.png" width="492" height="392"
-        alt="Leave an application promo image" loading="lazy" />
+      <img srcset="/GoIT-Markup-Final-Project/assets/1x-0a7ad626.png 1x, /GoIT-Markup-Final-Project/assets/2x-747b60ff.png 2x, /GoIT-Markup-Final-Project/assets/3x-7b73eeca.png 3x" src="/GoIT-Markup-Final-Project/assets/1x-0a7ad626.png" width="492" height="392" alt="Leave an application promo image" loading="lazy" />
       <h3>1000</h3>
       <p>of our online English language lessons! This journey has been full of discovery, growth and unforgettable
         moments, and we are happy to share this joyful event with you.</p>
@@ -208,13 +203,16 @@
 
       <div class="application-inputs">
         <div class="application-form-field">
-          <input class="application-form-input" type="text" name="user-name" id="user-name" placeholder="Name" />
+          <input class="application-form-input" type="text" name="user-name" id="user-name" placeholder="Name"
+            pattern="[A-Za-z]{1,32}" required />
         </div>
         <div class="application-form-field">
-          <input class="application-form-input" type="email" name="user-email" id="user-email" placeholder="Email" />
+          <input class="application-form-input" type="email" name="user-email" id="user-email" placeholder="Email"
+            required />
         </div>
         <div class="application-form-field">
-          <input class="application-form-input" type="tel" name="user-tel" id="user-tel" placeholder="Phone" />
+          <input class="application-form-input" type="tel" name="user-tel" id="user-tel" placeholder="Phone"
+            pattern="[0-9]{12}" required />
         </div>
         <div class="application-form-field comment">
           <textarea class="application-form-comment" rows="4" name="user-comment" id="user-comment"
@@ -256,13 +254,6 @@
           </span>
           Volodymyr
         </label>
-
-        <!-- <label class="application-radio-label"><input class="application-radio-input" type="radio" name="teacher"
-          value="Artem" />Artem</label>
-      <label class="application-radio-label"><input class="application-radio-input" type="radio" name="teacher"
-          value="Ilona" />Ilona</label>
-      <label class="application-radio-label"><input class="application-radio-input" type="radio" name="teacher"
-          value="Volodymyr" />c</label> -->
       </div>
 
       <button class="application-btn" type="submit">Send</button>
