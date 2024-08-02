@@ -2,8 +2,11 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    margin-bottom: 0;
 
     background-color: var(--color-black);
+    box-shadow: 0 0 0 100vmax var(--color-black);
+    clip-path: inset(0 -100vmax -100vmax);
     color: var(--color-white);
 }
 
