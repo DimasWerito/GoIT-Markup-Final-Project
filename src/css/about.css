@@ -100,6 +100,8 @@
     .about {
         margin: 0 auto 100px;
         padding: 0;
+    }
+    .about-title {
         width: 704px;
     }
     .about-head {
@@ -113,6 +115,7 @@
         width: 658px;
     }
     .about-list {
+        width: 704px;
         grid-template-columns: auto auto;
     }
     .about-item {
@@ -130,9 +133,12 @@
 @media screen and (min-width: 1280px) {
     .about {
         margin: 0 auto 150px;
+    }
+    .about-title {
         width: 1024px;
     }
     .about-list {
+        width: 1024px;
         grid-template-columns: auto auto auto;
     }
     .about-item {
