@@ -34,7 +34,7 @@
 }
 
 .hero-title-accent {
-    color: #BEE8CC;
+    color: #bee8cc;
 }
 
 .hero-button {
@@ -42,7 +42,7 @@
     max-width: 306px;
     height: 60px;
     border-radius: 12px;
-    background-color: #4DC274;
+    background-color: #4dc274;
     outline: none;
     border: none;
     color: white;
@@ -56,7 +56,7 @@
 
 .hero-button:hover,
 .hero-button:focus {
-    background-color: #38AE5F;
+    background-color: #38ae5f;
 }
 
 .hero-scroll-down {
@@ -72,14 +72,14 @@
     border-radius: 50%;
     background-color: white;
     margin-left: auto;
-    color: #4DC274;
+    color: #4dc274;
     transition: color var(--animation), background-color var(--animation);
 }
 
 .scroll-button:hover,
 .scroll-button:focus {
     color: white;
-    background-color: #4DC274;
+    background-color: #4dc274;
 }
 
 @media screen and (max-width: 767.999px) {
@@ -89,51 +89,51 @@
     }
 
     .hero-wrapper {
-            max-width: 100%;
-            height: 709px;
-            padding: 20px 14px 14px 20px;
-            display: flex;
-            flex-direction: column;
-            justify-content: end;
-            align-items: start;
-            border-radius: 30px;
-        }
+        max-width: 100%;
+        height: 709px;
+        padding: 20px 14px 14px 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: end;
+        align-items: start;
+        border-radius: 30px;
+    }
 
-        .hero-title {
-            color: white;
-            font-size: 38px;
-            line-height: 1.05;
-            max-width: 295px;
-            width: 100%;
-            margin-bottom: 40px;
-        }
+    .hero-title {
+        color: white;
+        font-size: 38px;
+        line-height: 1.05;
+        max-width: 295px;
+        width: 100%;
+        margin-bottom: 40px;
+    }
 
-        .hero-button {
-            margin: 0 0 58px;
-            padding: 14px;
-            width: 100%;
-            max-width: 313px;
-            height: 52px;
-            font-size: 14px;
-            line-height: 1.71;
-        }
+    .hero-button {
+        margin: 0 0 58px;
+        padding: 14px;
+        width: 100%;
+        max-width: 313px;
+        height: 52px;
+        font-size: 14px;
+        line-height: 1.71;
+    }
 
-        .hero-scroll-down {
-            margin-top: 20px;
-        }
+    .hero-scroll-down {
+        margin-top: 20px;
+    }
 
-        .scroll-button {
-            width: 38px;
-            height: 38px;
-            position: absolute;
-            bottom: 14px;
-            right: 14px;
-        }
+    .scroll-button {
+        width: 38px;
+        height: 38px;
+        position: absolute;
+        bottom: 14px;
+        right: 14px;
+    }
 
-        .scroll-icon {
-            width: 20px;
-            height: 20px;
-        }
+    .scroll-icon {
+        width: 20px;
+        height: 20px;
+    }
 }
 
 @media screen and (min-width: 768px) {
@@ -143,12 +143,12 @@
     }
 
     .hero-wrapper {
-            height: 857px;
-            padding: 260px 32px 32px 32px;
-            border-radius: 30px;
-            width: 100%;
-        }
-    
+        height: 857px;
+        padding: 260px 32px 32px 32px;
+        border-radius: 30px;
+        width: 100%;
+    }
+
     .hero-title {
         width: 488px;
         font-size: 60px;
@@ -181,31 +181,31 @@
     }
 
     .hero-wrapper {
-            border-radius: 30px;
-            width: 100%;
-        }
+        border-radius: 30px;
+        width: 100%;
+    }
 
-        .hero-title {
-            width: 564px;
-            font-size: 60px;
-        }
+    .hero-title {
+        width: 564px;
+        font-size: 60px;
+    }
 
-        .scroll-button {
-            width: 38px;
-            height: 38px;
-        }
+    .scroll-button {
+        width: 38px;
+        height: 38px;
+    }
 
-        .hero-button {
-            font-size: 18px;
-            width: 306px;
-            height: 60px;
-            line-height: 1.56;
-            padding: 16px 64px;
-        }
+    .hero-button {
+        font-size: 18px;
+        width: 306px;
+        height: 60px;
+        line-height: 1.56;
+        padding: 16px 64px;
+    }
 
-        .scroll-button {
-            position: absolute;
-            bottom: 32px;
-            right: 32px;
-        }
+    .scroll-button {
+        position: absolute;
+        bottom: 32px;
+        right: 32px;
+    }
 }
