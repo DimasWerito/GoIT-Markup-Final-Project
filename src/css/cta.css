@@ -1,25 +1,32 @@
-.cta{
+.cta {
     display: flex;
     justify-content: center;
     padding: 0 20px;
+    min-width: 320px;
+    max-width: 375px;
+    width: 100%;
 
     @media screen and (min-width: 768px) {
+        max-width: 768px;
         padding: 0 32px;
     }
 
     @media screen and (min-width: 1280px) {
+        max-width: 1280px;
         padding: 0 64px;
     }
 }
 
-.list-of-power-english{
-    margin:0;
+.list-of-power-english {
+    margin: 0;
     padding: 0;
 }
-.block{
-    background: linear-gradient(84.6deg, #4DC274 2.25%, #BEE8CC 131.25%);
+
+.block {
+    background: linear-gradient(84.6deg, #4dc274 2.25%, #bee8cc 131.25%);
     border-radius: 30px;
-    width: 335px;
+    width: 100%;
+    max-width: 335px;
     height: 737px;
     text-align: left;
     font-family: Manrope;
@@ -31,65 +38,64 @@
     margin-right: 20px;
     padding: 0 20px; */
     padding-bottom: 60px;
-
 }
 
-@media only screen and (min-width: 768px){
-    .block{
-        width: 704px;
+@media only screen and (min-width: 768px) {
+    .block {
+        max-width: 704px;
         height: 950px;
     }
 }
 
-@media only screen and (min-width: 1280px){
-    .block{
-        width: 1280px;
-        
+@media only screen and (min-width: 1280px) {
+    .block {
+        max-width: 1280px;
     }
 }
 
-.inside-of-block{
+.inside-of-block {
     background-color: #fff;
     display: flex;
     position: absolute;
     flex-direction: row;
     margin: 0 auto;
     border-radius: 30px;
-    width: 295px;
+    width: 100%;
+    max-width: 295px;
     height: 408px;
     z-index: 3;
 }
 
-.list-and-button{
+.list-and-button {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-@media only screen and (min-width: 1158px){
-    .list-and-button{
+@media only screen and (min-width: 1158px) {
+    .list-and-button {
         align-items: flex-start;
     }
 }
 
-@media only screen and (min-width: 768px){
-    .inside-of-block{
-        width:668px;
+@media only screen and (min-width: 768px) {
+    .inside-of-block {
+        max-width: 668px;
         height: 500px;
     }
 }
 
-@media only screen and (min-width: 1280px){
-    .inside-of-block{
-        width: 1024px;
+@media only screen and (min-width: 1280px) {
+    .inside-of-block {
+        max-width: 1024px;
         height: 471px;
         justify-content: space-between;
         padding-right: 0;
         column-gap: 92px;
-        
     }
 }
-.header-block-inside{
+
+.header-block-inside {
     width: 295px;
     color: #fff;
     font-family: Manrope;
@@ -99,10 +105,9 @@
     text-align: left;
     margin-bottom: 60px;
     margin-left: 20px;
-    
-    
 }
-.languege-head{
+
+.languege-head {
     font-family: Manrope;
     font-size: 38px;
     font-weight: 700;
@@ -110,11 +115,10 @@
     text-align: left;
 
     color: rgba(190, 232, 204, 1);
-
 }
 
-@media only screen and (min-width: 765px){
-    .header-block-inside{
+@media only screen and (min-width: 765px) {
+    .header-block-inside {
         margin-right: 32px;
         margin-left: 32px;
         font-size: 60px;
@@ -122,21 +126,21 @@
         line-height: 70px;
     }
 
-    .languege-head{
+    .languege-head {
         font-size: 60px;
         line-height: 70px;
     }
 }
 
-@media only screen and (min-width: 1280px){
-    .header-block-inside{
+@media only screen and (min-width: 1280px) {
+    .header-block-inside {
         width: 776px;
         margin-bottom: 137px;
         margin-left: 64px;
-        
     }
 }
-.h4-inside-of-block{
+
+.h4-inside-of-block {
     margin-bottom: 20px;
     margin-top: 40px;
     font-family: Manrope;
@@ -149,84 +153,76 @@
 }
 
 @media only screen and (min-width: 765px) {
-    .h4-inside-of-block{
+    .h4-inside-of-block {
         font-size: 40px;
         margin-bottom: 32px;
         margin-top: 62px;
         line-height: 48px;
     }
-    
 }
 
-@media only screen and (min-width: 1280px){
-
-}
-.leave-application-btn{
+.leave-application-btn {
     width: 255px;
     height: 52px;
-    padding: 14px, 67px, 14px, 67px;
+    padding: 14px 67px 14px 67px;
     background-color: rgba(77, 194, 116, 1);
     margin: auto 0;
     border-radius: 20px;
     margin-bottom: 40px;
     border: none;
-    
 
-}
-.leave-application-btn:hover,
-.leave-application-btn:focus {
-    background-color: rgba(56, 174, 95, 1);
-}
-
-@media only screen and (min-width: 765px) {
-    .leave-application-btn{
-        width: 306px;
-        height: 60px;
-        border-radius: 12px;
-    }
-}
-.leave-application-btn > p{
     font-family: Manrope;
     font-size: 14px;
     font-weight: 700;
     line-height: 24px;
     text-align: center;
-    color:#fff;
-
+    color: #fff;
 }
 
-@media only screen and (min-width:765px){
-    .leave-application-btn > p {
+.leave-application-btn:hover,
+.leave-application-btn:focus {
+    background-color: rgba(56, 174, 95, 1);
+}
+
+@media only screen and (min-width: 768px) {
+    .leave-application-btn {
+        width: 306px;
+        height: 60px;
+        border-radius: 12px;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .leave-application-btn {
         font-size: 18px;
         line-height: 28px;
     }
 }
-.p-of-list{
+
+.p-of-list {
     display: flex;
     flex-direction: row;
     align-items: center;
 }
-.paragraph{
-    margin-left:8px;
+
+.paragraph {
+    margin-left: 8px;
     font-family: Manrope;
     font-size: 14px;
     font-weight: 700;
     line-height: 20px;
-    letter-spacing: -0.02em;    
+    letter-spacing: -0.02em;
     text-align: left;
-    
-
 }
 
-@media only screen and (min-width: 768px){
-    .paragraph{
+@media only screen and (min-width: 768px) {
+    .paragraph {
         line-height: 24px;
         font-size: 20px;
-        
     }
 }
 
-.list-of-power-english{
+.list-of-power-english {
     display: flex;
     flex-direction: column;
     font-family: Manrope;
@@ -242,114 +238,109 @@
     margin-right: 20px;
 }
 
-@media only screen and (min-width: 765px){
-    .list-of-power-english{
+@media only screen and (min-width: 765px) {
+    .list-of-power-english {
         row-gap: 24px;
         margin-bottom: 40px;
     }
 }
 
 @media only screen and (min-width: 1280px) {
-    .list-of-power-english{
+    .list-of-power-english {
         width: 654px;
         height: 156px;
         margin-bottom: 39px;
     }
-    
 }
 
-.svgs{
-    fill:rgba(77, 194, 116, 1);
-    width:20px;
+.svgs {
+    fill: rgba(77, 194, 116, 1);
+    width: 20px;
     height: 20px;
 }
 
-.all-block{
+.all-block {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    
 }
 
-@media only screen and (min-width: 1158px){
-    .all-block{
+@media only screen and (min-width: 1158px) {
+    .all-block {
         margin-left: 64px;
     }
 }
-.container-block{
-    width: 295px;
-    height:405px;
+
+.container-block {
+    width: 100%;
+    max-width: 295px;
+    height: 405px;
     border-radius: 16px;
     position: relative;
-    margin: auto; 
-    padding: auto;
+    margin: auto;
+    padding: 0;
 }
 
-@media only screen and (min-width: 756px){
-    .container-block{
-        width: 668px;
+@media only screen and (min-width: 756px) {
+    .container-block {
+        max-width: 668px;
         height: 500px;
     }
 }
 
-@media only screen and (min-width: 1158px){
-    .container-block{
-        width: 1024px;
+@media only screen and (min-width: 1158px) {
+    .container-block {
+        max-width: 1024px;
         height: 471px;
     }
 }
-.background-shdw1{
+
+.background-shdw1 {
     position: absolute;
     z-index: 2;
-    transform: rotate(9deg);
+    transform: rotate(10deg);
     background-color: rgba(255, 255, 255, 0.5);
-
 }
-.background-shdw2{
+
+.background-shdw2 {
     position: absolute;
     z-index: 1;
     transform: rotate(-11deg);
     background: rgba(255, 255, 255, 0.5);
-
-    
 }
-.img-tall-books{
+
+.img-tall-books {
     margin-top: 173px;
 }
 
-.books{
+.books {
     display: none;
 }
 
-@media only screen and (min-width: 765px){
-    .books{
+@media only screen and (min-width: 765px) {
+    .books {
         display: block;
     }
 }
 
-
-.shadow{
+.shadow {
     position: absolute;
     width: 295px;
-    height:405px;
+    height: 405px;
     border-radius: 16px;
-
 }
 
-@media only screen and (min-width: 756px){
-    .shadow{
-        width:668px;
+@media only screen and (min-width: 756px) {
+    .shadow {
+        width: 668px;
         height: 500px;
         border-radius: 30px;
     }
 }
 
-@media only screen and (min-width: 1158px){
-    .shadow{
+@media only screen and (min-width: 1158px) {
+    .shadow {
         width: 1024px;
         height: 471px;
     }
-}
-.background-shdw1{
-    rotate: 9;
 }

@@ -34,9 +34,6 @@
     z-index: -1;
 }
 .application-p {
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 1.71;
     text-align: center;
     color: rgba(18, 20, 23, 0.8);
     margin-top: 0;
@@ -68,7 +65,6 @@
 }
 .application-picture p {
     margin: 0 20px;
-    font-weight: 400;
     font-size: 16px;
     line-height: 1.5;
     text-align: center;
@@ -88,8 +84,6 @@
     width: 100%;
     height: 50px;
     padding: 16px 18px;
-    font-weight: 400;
-    font-size: 14px;
     line-height: 1.29;
     border: 1px solid rgba(18, 20, 23, 0.1);
     border-radius: 12px;
@@ -103,8 +97,6 @@
     width: 100%;
     height: 94px;
     padding: 16px 18px;
-    font-weight: 400;
-    font-size: 14px;
     line-height: 1.29;
     border: 1px solid rgba(18, 20, 23, 0.1);
     border-radius: 12px;
@@ -116,8 +108,6 @@
 }
 .application-form-input::placeholder,
 .application-form-comment::placeholder {
-    font-weight: 400;
-    font-size: 14px;
     line-height: 1.29;
     color: var(--color-black);
 }
@@ -152,9 +142,6 @@
     width: 100%;
     padding-left: 28px;
     margin-top: 8px;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 171%;
     letter-spacing: -0.02em;
     color: var(--black);
 }
@@ -205,8 +192,6 @@ input[type='radio']:hover + .application-radio-label > .application-radio-input 
     width: 100%;
     height: 52px;
     font-weight: 700;
-    font-size: 14px;
-    line-height: 1.71;
     text-align: center;
     margin-bottom: 16px;
     padding: 0;
@@ -230,7 +215,6 @@ input[type='radio']:hover + .application-radio-label > .application-radio-input 
 .application-form-desc {
     margin: 0;
     padding: 0;
-    font-weight: 400;
     font-size: 12px;
     line-height: 1.33;
     color: rgba(18, 20, 23, 0.5);
@@ -257,6 +241,7 @@ input[type='radio']:hover + .application-radio-label > .application-radio-input 
         line-height: 1.2;
     }
     .application-p {
+        color: rgba(18, 20, 23, 0.5);
         margin: 0 59px 14px;
         font-size: 18px;
         line-height: 1.67;

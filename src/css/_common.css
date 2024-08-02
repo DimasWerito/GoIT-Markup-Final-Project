@@ -1,4 +1,4 @@
-@import 'node_modules/modern-normalize/modern-normalize.css';
+@import '../../node_modules/modern-normalize/modern-normalize.css';
 
 body {
     padding: 0;
@@ -26,8 +26,6 @@ section,
     @media screen and (min-width: 1280px) {
         max-width: 1280px;
     }
-
-    outline: 1px solid tomato;
 }
 
 .visually-hidden {
