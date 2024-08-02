@@ -1,0 +1,230 @@
+.footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    background-color: var(--color-black);
+    color: var(--color-white);
+}
+
+
+.footer a {
+    text-decoration: none;
+    color: inherit;
+    background: none;
+    border: none;
+    outline: none;
+}
+
+.footer ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+
+    align-items: start;
+    justify-content: start;
+
+    margin: 0;
+    padding: 40px 20px 20px;
+}
+
+@media screen and (min-width: 768px) {
+    .footer-content {
+        flex-direction: row;
+        justify-content: space-between;
+
+        padding: 32px 32px 126px;
+    }
+}
+
+@media screen and (min-width: 1280px) {
+    .footer-content {
+        padding: 64px 128px 87px;
+    }
+}
+
+.footer-contacts {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-logo {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 1.37;
+    color: var(--color-white);
+    margin-bottom: 20px;
+}
+
+@media screen and (min-width: 768px) {
+    .footer-logo {
+        margin-bottom: 32px;
+    }
+}
+
+.footer-logo-accent {
+    color: var(--color-green);
+}
+
+.footer-contact-text {
+    margin: 0;
+    color: var(--color-white);
+    font-size: 14px;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 18px;
+    letter-spacing: -0.28px;
+    opacity: 0.6;
+}
+
+.footer-contact-item {
+    margin: 0;
+}
+
+.footer-contact-item:not(:last-of-type) {
+    margin-bottom: 16px;
+}
+
+.footer-contact-link {
+    margin: 0;
+    font-weight: 600;
+    line-height: 18px;
+    color: var(--color-white);
+}
+
+.footer-nav-list {
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+}
+
+.footer-nav-link {
+    position: relative;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 18px;
+    color: var(--color-white);
+}
+
+.footer-nav-link::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -4px;
+
+    display: block;
+    width: 37px;
+    height: 4px;
+
+    background-color: var(--color-green);
+    border-radius: 2px;
+
+    transform: scaleY(0) translateY(-10px);
+    transition: transform var(--animation);
+}
+
+.footer-nav-link:hover,
+.footer-nav-link:focus {
+    transform: translateY(-1px);
+}
+
+.footer-content .footer-nav-link:hover::before,
+.footer-content .footer-nav-link:focus::before {
+    transform: scaleY(1) translateY(0px);
+}
+
+.footer-socials-list {
+    margin: 0;
+    padding: 0;
+
+    display: flex;
+    flex-direction: row;
+    gap: 12px;
+}
+
+.footer-socials-link {
+    display: block;
+    color: var(--color-white);
+    border-radius: 10px;
+    transition: box-shadow var(--animation), transform var(--animation);
+}
+
+.footer-socials-link:hover,
+.footer-socials-link:focus {
+    box-shadow: 0 1px 4px var(--color-green);
+    transform: translateY(-1px);
+}
+
+.footer-socials-link .footer-socials-icon {
+    display: block;
+    width: 42px;
+    height: 42px;
+
+    @media screen and (min-width: 768px) {
+        width: 44px;
+        height: 44px;
+    }
+}
+
+.footer-note {
+    position: relative;
+
+    margin-top: 60px;
+    padding: 0 20px 20px;
+
+    text-align: left;
+    font-weight: 400;
+    line-height: 18px;
+    letter-spacing: -0.28px;
+    opacity: 0.6;
+
+    display: flex;
+    flex-direction: column;
+}
+
+
+@media screen and (min-width: 768px) {
+    .footer-note {
+        margin-top: auto;
+        flex-direction: row;
+        justify-content: space-between;
+
+        padding: 0 32px 16px;
+    }
+}
+
+@media screen and (min-width: 1280px) {
+    .footer-note {
+        padding: 0 128px 23px;
+    }
+}
+
+/* line */
+.footer-note:before {
+    content: '';
+    position: absolute;
+
+    top: -20px;
+    left: 0;
+
+    display: block;
+    width: 100%;
+    height: 1px;
+    background-color: var(--color-white);
+    opacity: 0.1;
+}
+
+.footer-note-list {
+    margin: 14px 0 0;
+
+    display: flex;
+    flex-direction: row;
+    gap: 18px;
+    align-items: center;
+}
