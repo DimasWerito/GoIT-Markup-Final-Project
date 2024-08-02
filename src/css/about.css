@@ -121,7 +121,7 @@
     }
     .about-item-memoji {
         grid-column: 1 / span 2;
-        grid-row: 3;
+        grid-row: auto;
         height: 243px;
         border-radius: 32px;
     }
