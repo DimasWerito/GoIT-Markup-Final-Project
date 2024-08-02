@@ -35,7 +35,7 @@
 }
 .application-p {
     text-align: center;
-    color: rgba(18, 20, 23, 0.5);
+    color: rgba(18, 20, 23, 0.8);
     margin-top: 0;
     margin-bottom: 14px;
 }
@@ -241,6 +241,7 @@ input[type='radio']:hover + .application-radio-label > .application-radio-input 
         line-height: 1.2;
     }
     .application-p {
+        color: rgba(18, 20, 23, 0.5);
         margin: 0 59px 14px;
         font-size: 18px;
         line-height: 1.67;
