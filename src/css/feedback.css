@@ -53,12 +53,13 @@
     list-style: none;
 }
 .feedback-item {
-    display: flex;
+    display: grid;
     flex-direction: column;
     align-content: center;
-    padding: 0;
+    padding: 0 20px;
+    padding-top: 40px;
     width: 320px;
-    /* height: 326px; */
+    height: 326px;
     border-radius: 30px;
     text-align: left;
 
@@ -67,7 +68,6 @@
 }
 .feedback-rectangle {
     display: flex;
-    /* justify-content: center; */
     align-items: center;
     position: absolute;
     padding: 0 20px;
@@ -101,12 +101,12 @@
     font-weight: 400;
     line-height: 16px;
     text-align: left;
+    margin-top: -20px;
 
     color: #ffffff83;
     /* color: var(--color-white); */
 }
 .feedback-item-desc {
-    /* display: flex; */
     margin: 0 auto;
 
     font-family: Manrope;
@@ -114,7 +114,65 @@
     font-weight: 400;
     line-height: 24px;
     text-align: left;
-
+    padding: 0 10px;
     color: rgba(18, 20, 23, 0.5);
+}
+/* #endregion */
+
+/* #region Media rules block*/
+@media screen and (min-width: 320px) {
+    .feedback-item {
+        display: none;
+    }
+
+    .feedback-item:nth-child(-n + 1) {
+        display: grid;
+    }
+}
+@media screen and (min-width: 768px) {
+    .feedback {
+        margin: 0 auto 100px;
+        padding: 0;
+        width: 704px;
+    }
+    .feedback-head {
+        font-size: 40px;
+        line-height: 1.2;
+    }
+    .feedback-title-desc {
+        font-size: 18px;
+        line-height: 1.67;
+        margin: 0 auto 64px;
+    }
+    .feedback-item {
+        display: none;
+    }
+
+    .feedback-item:nth-child(-n + 2) {
+        display: grid;
+    }
+    .feedback-list {
+        padding: 0 64px;
+        gap: 32px;
+        grid-template-columns: auto auto;
+    }
+    .feedback-item-desc {
+        font-size: 16px;
+        line-height: 1.5;
+    }
+}
+
+@media screen and (min-width: 1280px) {
+    .feedback {
+        margin: 0 auto 150px;
+        width: 1024px;
+    }
+    .feedback-title-desc {
+        width: 709px;
+    }
+    .feedback-list {
+        padding: 0;
+        grid-template-columns: auto auto auto auto;
+    }
 }
 /* #endregion */
