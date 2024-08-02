@@ -72,7 +72,7 @@
     align-items: center;
 }
 
-@media only screen and (min-width: 1158px) {
+@media only screen and (min-width: 1280px) {
     .list-and-button {
         align-items: flex-start;
     }
@@ -177,6 +177,7 @@
     line-height: 24px;
     text-align: center;
     color: #fff;
+    text-decoration: none;
 }
 
 .leave-application-btn:hover,
@@ -206,6 +207,7 @@
 }
 
 .paragraph {
+    margin: 0;
     margin-left: 8px;
     font-family: Manrope;
     font-size: 14px;
@@ -255,6 +257,7 @@
 
 .svgs {
     fill: rgba(77, 194, 116, 1);
+    color: rgba(77, 194, 116, 1);
     width: 20px;
     height: 20px;
 }
@@ -265,7 +268,7 @@
     justify-content: center;
 }
 
-@media only screen and (min-width: 1158px) {
+@media only screen and (min-width: 1280px) {
     .all-block {
         margin-left: 64px;
     }
@@ -288,7 +291,7 @@
     }
 }
 
-@media only screen and (min-width: 1158px) {
+@media only screen and (min-width: 1280px) {
     .container-block {
         max-width: 1024px;
         height: 471px;
@@ -338,7 +341,7 @@
     }
 }
 
-@media only screen and (min-width: 1158px) {
+@media only screen and (min-width: 1280px) {
     .shadow {
         width: 1024px;
         height: 471px;
