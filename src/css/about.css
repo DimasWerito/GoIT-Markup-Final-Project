@@ -34,9 +34,6 @@
     z-index: -1;
 }
 .about-title-p {
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 1.71;
     text-align: center;
     color: rgba(18, 20, 23, 0.5);
     margin-top: 0;
@@ -100,6 +97,8 @@
     .about {
         margin: 0 auto 100px;
         padding: 0;
+    }
+    .about-title {
         width: 704px;
     }
     .about-head {
@@ -113,6 +112,7 @@
         width: 658px;
     }
     .about-list {
+        width: 704px;
         grid-template-columns: auto auto;
     }
     .about-item {
@@ -121,7 +121,7 @@
     }
     .about-item-memoji {
         grid-column: 1 / span 2;
-        grid-row: 3;
+        grid-row: auto;
         height: 243px;
         border-radius: 32px;
     }
@@ -130,9 +130,12 @@
 @media screen and (min-width: 1280px) {
     .about {
         margin: 0 auto 150px;
+    }
+    .about-title {
         width: 1024px;
     }
     .about-list {
+        width: 1024px;
         grid-template-columns: auto auto auto;
     }
     .about-item {
