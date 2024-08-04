@@ -1,34 +1,54 @@
 @import '../../node_modules/modern-normalize/modern-normalize.css';
 
 html {
-  scroll-behavior: smooth;
+    scroll-behavior: smooth;
 }
 
 body {
     padding: 0;
     margin: 0;
 
-    font-family: "Manrope", sans-serif;
+    font-family: 'Manrope', sans-serif;
     font-size: 14px;
     line-height: 1.71;
     font-weight: 400;
     font-style: normal;
 }
 
-section,
+address {
+    font-style: normal;
+}
+
 .section {
-    margin: 0 auto 150px;
+    margin: 0;
     padding: 0;
+    padding-bottom: 80px;
+    width: 100%;
+
+    @media screen and (min-width: 768px) {
+        padding-bottom: 100px;
+    }
+
+    @media screen and (min-width: 1280px) {
+        padding-bottom: 150px;
+    }
+}
+
+.container {
+    margin: 0 auto;
     width: 100%;
     min-width: 320px;
     max-width: 375px;
+    padding: 0 20px;
 
     @media screen and (min-width: 768px) {
         max-width: 768px;
+        padding: 0 32px;
     }
 
     @media screen and (min-width: 1280px) {
         max-width: 1280px;
+        padding: 0 128px;
     }
 }
 
@@ -43,4 +63,4 @@ section,
     clip-path: inset(100%);
     clip: rect(0 0 0 0);
     overflow: hidden;
-  }
+}

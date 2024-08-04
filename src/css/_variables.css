@@ -1,13 +1,13 @@
 :root {
     --color-black: #121417;
-    --color-white: #FFFFFF;
-    --color-green: #4DC274;
-    --color-lightgreen: #D4FDE1;
-    --color-gray: #F3F5F6;
+    --color-white: #ffffff;
+    --color-green: #4dc274;
+    --color-lightgreen: #d4fde1;
+    --color-gray: #f3f5f6;
 
-    --green-gradient: linear-gradient(90deg, #4DC274 0%, #BEE8CC 100%);
-    --animation-delay: 0.3s;
-    --animation: 0.3s ease-in-out;
+    --green-gradient: linear-gradient(90deg, #4dc274 0%, #bee8cc 100%);
+    --animation-delay: 0.2s;
+    --animation: var(--animation-delay) ease-in-out;
 
     --mobile-min-width: 320px;
     --mobile-max-width: 375px;
