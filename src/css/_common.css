@@ -19,7 +19,7 @@ section,
 .section {
     margin: 0 auto 150px;
     padding: 0;
-    width: 100vw;
+    width: 100%;
     min-width: 320px;
     max-width: 375px;
 

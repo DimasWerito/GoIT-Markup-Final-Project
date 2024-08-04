@@ -51,7 +51,7 @@
 }
 
 .header-placeholder {
-    width: 100vw;
+    width: 100%;
     max-width: unset;
     height: 67px;
     margin: 0 0 8px;
