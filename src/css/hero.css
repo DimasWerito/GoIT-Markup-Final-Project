@@ -85,7 +85,6 @@
 @media screen and (max-width: 767.999px) {
     .hero {
         padding: 0 20px;
-        margin-bottom: 80px;
     }
 
     .hero-wrapper {
@@ -139,7 +138,6 @@
 @media screen and (min-width: 768px) {
     .hero {
         padding: 0 32px;
-        margin-bottom: 100px;
     }
 
     .hero-wrapper {

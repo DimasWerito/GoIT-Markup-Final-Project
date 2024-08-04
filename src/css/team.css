@@ -1,6 +1,5 @@
 .team {
     padding: 0 20px;
-    margin: 0 auto 80px;
 }
 
 /* #region Title block */
@@ -82,7 +81,6 @@
 /* #region Media rules block*/
 @media screen and (min-width: 768px) {
     .team {
-        margin: 0 auto 100px;
         padding: 0;
     }
     .team-title {
@@ -111,7 +109,6 @@
 
 @media screen and (min-width: 1280px) {
     .team {
-        margin: 0 auto 150px;
     }
     .team-title {
         width: 1024px;
