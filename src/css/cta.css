@@ -1,27 +1,8 @@
-.cta {
-    margin: 0 auto;
-    width: 100%;
-    min-width: 320px;
-    max-width: 375px;
-    padding: 0 20px 80px 20px;
-
-    @media screen and (min-width: 768px) {
-        max-width: 768px;
-        padding: 0 32px 100px 32px;
-    }
-
-    @media screen and (min-width: 1280px) {
-        max-width: 1280px;
-        padding: 0 64px 150px 64px;
-    }
-}
-
-.cta-wrapper {
+.cta .container {
     position: relative;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    margin: 0 auto;
     padding: 40px 20px 64px;
     width: 100%;
     max-width: 335px;
@@ -31,14 +12,14 @@
     background: var(--green-gradient);
 
     @media screen and (min-width: 768px) {
-        max-width: 768px;
+        max-width: 704px;
         padding: 64px 32px 93px;
 
         border-radius: 30px;
     }
 
     @media screen and (min-width: 1280px) {
-        max-width: 1280px;
+        max-width: 1152px;
         padding: 64px 64px 142px;
     }
 }
