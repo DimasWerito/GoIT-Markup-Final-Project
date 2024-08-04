@@ -1,5 +1,5 @@
-.lessons {
-    padding: 0 20px 80px 20px;
+.lessons .container {
+    padding: 0 20px;
 }
 
 .lessons__title-lg,
@@ -135,9 +135,6 @@
 }
 
 @media (min-width: 768px) {
-    .lessons {
-        padding-bottom: 100px;
-    }
     .lessons__title-lg {
         font-size: 40px;
         line-height: 48px;
@@ -194,9 +191,6 @@
 }
 
 @media (min-width: 1280px) {
-    .lessons {
-        padding-bottom: 150px;
-    }
     .lessons__text-main {
         max-width: 665px;
         margin: 0 auto 64px;
