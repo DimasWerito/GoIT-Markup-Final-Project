@@ -19,6 +19,7 @@ section,
 .section {
     margin: 0 auto;
     padding: 0;
+    width: 100%;
     min-width: 320px;
     max-width: 375px;
 
