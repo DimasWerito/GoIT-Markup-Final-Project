@@ -32,8 +32,6 @@ address {
     @media screen and (min-width: 1280px) {
         padding-bottom: 150px;
     }
-
-    outline: 1px solid blue;
 }
 
 .container {
@@ -52,8 +50,6 @@ address {
         max-width: 1280px;
         padding: 0 128px;
     }
-
-    outline: 1px solid tomato;
 }
 
 .visually-hidden {
