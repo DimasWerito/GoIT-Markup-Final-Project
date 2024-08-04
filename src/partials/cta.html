@@ -38,13 +38,17 @@
                     <a href="#application" class="leave-application-btn">Leave an application</a>
                 </div>
 
-                <img
-                    class="img-books"
-                    src="./img/bookstack/1x.png"
-                    srcset="./img/bookstack/1x.png 1x, ./img/bookstack/2x.png 2x, ./img/bookstack/3x.png 3x"
-                    alt="books"
-                    loading="lazy"
-                />
+                <picture class="img-books">
+                    <source
+                        srcset="./img/bookstack/1x.webp 1x, ./img/bookstack/2x.webp 2x, ./img/bookstack/3x.webp 3x"
+                        type="image/webp"
+                    />
+                    <source
+                        srcset="./img/bookstack/1x.png 1x, ./img/bookstack/2x.png 2x, ./img/bookstack/3x.png 3x"
+                        type="image/png"
+                    />
+                    <img src="./img/bookstack/1x.png" alt="books" loading="lazy" />
+                </picture>
             </div>
         </div>
     </div>
