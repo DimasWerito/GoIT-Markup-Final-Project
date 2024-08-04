@@ -1,6 +1,5 @@
-.about {
-    padding: 0 20px 80px 20px;
-    margin: 0 auto;
+.about .container {
+    padding: 0 20px;
 }
 
 /* #region Title block */
@@ -94,10 +93,6 @@
 
 /* #region Media rules block*/
 @media screen and (min-width: 768px) {
-    .about {
-        margin: 0 auto;
-        padding-bottom: 100px;
-    }
     .about-title {
         width: 704px;
     }
@@ -128,10 +123,6 @@
 }
 
 @media screen and (min-width: 1280px) {
-    .about {
-        margin: 0 auto;
-        padding-bottom: 150px;
-    }
     .about-title {
         width: 1024px;
     }
