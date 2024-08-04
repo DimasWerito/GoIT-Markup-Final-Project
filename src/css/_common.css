@@ -15,10 +15,25 @@ body {
     font-style: normal;
 }
 
-section,
 .section {
-    margin: 0 auto;
+    margin: 0;
     padding: 0;
+    padding-bottom: 80px;
+    width: 100%;
+
+    @media screen and (min-width: 768px) {
+        padding-bottom: 100px;
+    }
+
+    @media screen and (min-width: 1280px) {
+        padding-bottom: 150px;
+    }
+
+    outline: 1px solid blue;
+}
+
+.container {
+    margin: 0 auto;
     width: 100%;
     min-width: 320px;
     max-width: 375px;
@@ -30,6 +45,8 @@ section,
     @media screen and (min-width: 1280px) {
         max-width: 1280px;
     }
+
+    outline: 1px solid tomato;
 }
 
 .visually-hidden {
