@@ -86,6 +86,7 @@
     height: 313px;
     background: var(--color-green);
 }
+.about-item-memoji picture,
 .about-item-memoji img {
     margin: 0 auto;
 }
