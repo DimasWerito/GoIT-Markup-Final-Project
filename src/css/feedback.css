@@ -1,10 +1,3 @@
-/* #region Base styles */
-.feedback {
-    padding: 0 20px 80px 20px;
-    margin: 0 auto;
-    box-sizing: border-box;
-}
-/* #endregion Base styles */
 /* #region Upper */
 .feedback-title {
     margin: 0 auto;
@@ -108,10 +101,6 @@
 /* #endregion Feedback Card */
 /* #region Media queries */
 @media screen and (min-width: 768px) {
-    .feedback {
-        margin: 0 auto;
-        padding: 0 32px 100px 32px;
-    }
     .feedback-title {
         margin-bottom: 64px;
     }
@@ -157,10 +146,6 @@
     }
     .feedback-item {
         max-width: 320px;
-    }
-    .feedback {
-        margin: 0 auto;
-        padding: 0 128px 150px 128px;
     }
 }
 /* #endregion Media queries */
