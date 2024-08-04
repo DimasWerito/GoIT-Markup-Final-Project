@@ -28,6 +28,7 @@
                 <div class="application-inputs">
                     <div class="application-form-field">
                         <input
+                            aria-label="Name"
                             class="application-form-input"
                             type="text"
                             name="user-name"
@@ -39,6 +40,7 @@
                     </div>
                     <div class="application-form-field">
                         <input
+                            aria-label="Email"
                             class="application-form-input"
                             type="email"
                             name="user-email"
@@ -49,6 +51,7 @@
                     </div>
                     <div class="application-form-field">
                         <input
+                            aria-label="Phone"
                             class="application-form-input"
                             type="tel"
                             name="user-tel"
@@ -60,6 +63,7 @@
                     </div>
                     <div class="application-form-field comment">
                         <textarea
+                            aria-label="Comment"
                             class="application-form-comment"
                             rows="4"
                             name="user-comment"
@@ -71,29 +75,29 @@
 
                 <h3 class="application-radio-title">Choose a teacher</h3>
                 <div class="application-radio">
-                    <input class="visually-hidden" type="radio" name="teacher" id="maria" value="Maria" checked />
-                    <label class="application-radio-label" for="maria">
+                    <input class="visually-hidden" type="radio" name="teacher" id="maria" value="Maria" aria-labelledby="check-label" checked />
+                    <label class="application-radio-label" for="maria" id="check-label">
                         <span class="application-radio-input">
                             <span class="radio-dot"> </span>
                         </span>
                         Maria
                     </label>
-                    <input class="visually-hidden" type="radio" name="teacher" id="artem" value="Artem" />
-                    <label class="application-radio-label" for="artem">
+                    <input class="visually-hidden" type="radio" name="teacher" id="artem" value="Artem" aria-labelledby="check-label" />
+                    <label class="application-radio-label" for="artem" id="check-label">
                         <span class="application-radio-input">
                             <span class="radio-dot"> </span>
                         </span>
                         Artem
                     </label>
-                    <input class="visually-hidden" type="radio" name="teacher" id="ilona" value="Ilona" />
-                    <label class="application-radio-label" for="ilona">
+                    <input class="visually-hidden" type="radio" name="teacher" id="ilona" value="Ilona" aria-labelledby="check-label" />
+                    <label class="application-radio-label" for="ilona" id="check-label">
                         <span class="application-radio-input">
                             <span class="radio-dot"> </span>
                         </span>
                         Ilona
                     </label>
-                    <input class="visually-hidden" type="radio" name="teacher" id="volodymyr" value="Volodymyr" />
-                    <label class="application-radio-label" for="volodymyr">
+                    <input class="visually-hidden" type="radio" name="teacher" id="volodymyr" value="Volodymyr" aria-labelledby="check-label" />
+                    <label class="application-radio-label" for="volodymyr" id="check-label">
                         <span class="application-radio-input">
                             <span class="radio-dot"> </span>
                         </span>
