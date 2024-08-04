@@ -38,7 +38,7 @@
 }
 
 .hero-title {
-    color: white;
+    color: var(--color-white);
     font-size: 60px;
     font-weight: 700;
     line-height: 1.17;
@@ -56,10 +56,10 @@
     max-width: 306px;
     height: 60px;
     border-radius: 12px;
-    background-color: #4dc274;
+    background-color: var(--color-green);
     outline: none;
     border: none;
-    color: white;
+    color: var(--color-white);
     font-size: 18px;
     font-weight: 700;
     line-height: 1.16;
@@ -87,23 +87,22 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    max-width: 48px;
-    height: 48px;
+
     border-radius: 50%;
-    background-color: white;
+    background-color: var(--color-white);
     margin-left: auto;
-    color: #4dc274;
+    color: var(--color-green);
     transition: color var(--animation), background-color var(--animation);
 }
 
 .scroll-button:hover,
 .scroll-button:focus {
-    color: white;
-    background-color: #4dc274;
+    color: var(--color-white);
+    background-color: var(--color-green);
 }
 
 .hero-title {
-    color: white;
+    color: var(--color-white);
     font-size: 38px;
     line-height: 1.05;
     max-width: 295px;
