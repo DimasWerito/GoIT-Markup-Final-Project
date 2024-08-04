@@ -1,4 +1,8 @@
 .footer {
+    padding-bottom: 0;
+}
+
+.footer > .container {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -33,11 +37,7 @@
     justify-content: start;
 
     margin: 0;
-    padding: 40px 20px 20px;
-}
-
-address {
-    font-style: normal;
+    padding: 40px 0 20px;
 }
 
 @media screen and (min-width: 768px) {
@@ -45,13 +45,13 @@ address {
         flex-direction: row;
         justify-content: space-between;
 
-        padding: 32px 32px 126px;
+        padding: 32px 0 126px;
     }
 }
 
 @media screen and (min-width: 1280px) {
     .footer-content {
-        padding: 64px 128px 87px;
+        padding: 64px 0 87px;
     }
 }
 
@@ -182,7 +182,7 @@ address {
     position: relative;
 
     margin-top: 60px;
-    padding: 0 20px 20px;
+    padding: 0 0 20px;
 
     text-align: left;
     font-weight: 400;
@@ -200,13 +200,13 @@ address {
         flex-direction: row;
         justify-content: space-between;
 
-        padding: 0 32px 16px;
+        padding: 0 0 16px;
     }
 }
 
 @media screen and (min-width: 1280px) {
     .footer-note {
-        padding: 0 128px 23px;
+        padding: 0 0 23px;
     }
 }
 
