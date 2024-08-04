@@ -113,6 +113,7 @@
     }
     .about-list {
         width: 704px;
+        gap: 32px;
         grid-template-columns: auto auto;
     }
     .about-item {
