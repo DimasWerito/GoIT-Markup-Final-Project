@@ -1,90 +1,119 @@
 <!-- #region Application -->
 <section class="application" id="application">
-  <div class="application-title">
-    <h2 class="application-head">Leave an <span class="application-head-span">application</span></h2>
-    <p class="application-p">
-      Please use the form below to contact us. Enter your name, email, and message and we'll get back to you shortly.
-    </p>
-  </div>
-  <div class="application-block">
-    <div class="application-picture">
-      <img srcset="
-      ./img/application/1x.png 1x,
-      ./img/application/2x.png 2x,
-      ./img/application/3x.png 3x
-    " src="./img/application/1x.png" width="492" height="392" alt="Leave an application promo image" loading="lazy" >
-      <h3>1000</h3>
-      <p>of our online English language lessons! This journey has been full of discovery, growth and unforgettable
-        moments, and we are happy to share this joyful event with you.</p>
-    </div>
-
-    <form class="application-form" name="user_application">
-
-      <div class="application-inputs">
-        <div class="application-form-field">
-          <input class="application-form-input" type="text" name="user-name" id="user-name" placeholder="Name"
-            pattern="[A-Za-z]{1,32}" required >
-        </div>
-        <div class="application-form-field">
-          <input class="application-form-input" type="email" name="user-email" id="user-email" placeholder="Email"
-            required >
-        </div>
-        <div class="application-form-field">
-          <input class="application-form-input" type="tel" name="user-tel" id="user-tel" placeholder="Phone"
-            pattern="[0-9]{12}" required >
-        </div>
-        <div class="application-form-field comment">
-          <textarea class="application-form-comment" rows="4" name="user-comment" id="user-comment"
-            placeholder="Comment"></textarea>
-        </div>
-      </div>
-
-      <h3 class="application-radio-title">Choose a teacher</h3>
-      <div class="application-radio">
-        <input class="visually-hidden" type="radio" name="teacher" id="maria" value="Maria" checked >
-        <label class="application-radio-label" for="maria">
-          <span class="application-radio-input">
-            <span class="radio-dot">
-            </span>
-          </span>
-          Maria
-        </label>
-        <input class="visually-hidden" type="radio" name="teacher" id="artem" value="Artem" >
-        <label class="application-radio-label" for="artem">
-          <span class="application-radio-input">
-            <span class="radio-dot">
-            </span>
-          </span>
-          Artem
-        </label>
-        <input class="visually-hidden" type="radio" name="teacher" id="ilona" value="Ilona" >
-        <label class="application-radio-label" for="ilona">
-          <span class="application-radio-input">
-            <span class="radio-dot">
-            </span>
-          </span>
-          Ilona
-        </label>
-        <input class="visually-hidden" type="radio" name="teacher" id="volodymyr" value="Volodymyr" >
-        <label class="application-radio-label" for="volodymyr">
-          <span class="application-radio-input">
-            <span class="radio-dot">
-            </span>
-          </span>
-          Volodymyr
-        </label>
-      </div>
-
-      <button class="application-btn" type="submit">Send</button>
-
-      <div class="application-form-agreement">
-        <p class="application-form-desc">
-          By clicking on &ldquo;Send&rdquo; button, you agree to our <span>
-            <a class="application-form-link" href="">Privacy Policy,</a>
-          </span> and allow Promodo to use this information for marketing purposes.
+    <div class="application-title">
+        <h2 class="application-head">Leave an <span class="application-head-span">application</span></h2>
+        <p class="application-p">
+            Please use the form below to contact us. Enter your name, email, and message and we'll get back to you
+            shortly.
         </p>
-      </div>
-    </form>
-  </div>
+    </div>
+    <div class="application-block">
+        <div class="application-picture">
+            <img
+                srcset="./img/application/1x.png 1x, ./img/application/2x.png 2x, ./img/application/3x.png 3x"
+                src="./img/application/1x.png"
+                width="492"
+                height="392"
+                alt="Leave an application promo image"
+                loading="lazy"
+            />
+            <h3>1000</h3>
+            <p>
+                of our online English language lessons! This journey has been full of discovery, growth and
+                unforgettable moments, and we are happy to share this joyful event with you.
+            </p>
+        </div>
+
+        <form class="application-form" name="user_application">
+            <div class="application-inputs">
+                <div class="application-form-field">
+                    <input
+                        class="application-form-input"
+                        type="text"
+                        name="user-name"
+                        id="user-name"
+                        placeholder="Name"
+                        pattern="[A-Za-z]{1,32}"
+                        required
+                    />
+                </div>
+                <div class="application-form-field">
+                    <input
+                        class="application-form-input"
+                        type="email"
+                        name="user-email"
+                        id="user-email"
+                        placeholder="Email"
+                        pattern="[a-zA-Z\S]+@[a-zA-Z\S]+\.[a-z]{2,3}$"
+                        required
+                    />
+                </div>
+                <div class="application-form-field">
+                    <input
+                        class="application-form-input"
+                        type="tel"
+                        name="user-tel"
+                        id="user-tel"
+                        placeholder="Phone"
+                        pattern="[0-9]{12}"
+                        required
+                    />
+                </div>
+                <div class="application-form-field comment">
+                    <textarea
+                        class="application-form-comment"
+                        rows="4"
+                        name="user-comment"
+                        id="user-comment"
+                        placeholder="Comment"
+                    ></textarea>
+                </div>
+            </div>
+
+            <h3 class="application-radio-title">Choose a teacher</h3>
+            <div class="application-radio">
+                <input class="visually-hidden" type="radio" name="teacher" id="maria" value="Maria" checked />
+                <label class="application-radio-label" for="maria">
+                    <span class="application-radio-input">
+                        <span class="radio-dot"> </span>
+                    </span>
+                    Maria
+                </label>
+                <input class="visually-hidden" type="radio" name="teacher" id="artem" value="Artem" />
+                <label class="application-radio-label" for="artem">
+                    <span class="application-radio-input">
+                        <span class="radio-dot"> </span>
+                    </span>
+                    Artem
+                </label>
+                <input class="visually-hidden" type="radio" name="teacher" id="ilona" value="Ilona" />
+                <label class="application-radio-label" for="ilona">
+                    <span class="application-radio-input">
+                        <span class="radio-dot"> </span>
+                    </span>
+                    Ilona
+                </label>
+                <input class="visually-hidden" type="radio" name="teacher" id="volodymyr" value="Volodymyr" />
+                <label class="application-radio-label" for="volodymyr">
+                    <span class="application-radio-input">
+                        <span class="radio-dot"> </span>
+                    </span>
+                    Volodymyr
+                </label>
+            </div>
+
+            <button class="application-btn" type="submit">Send</button>
+
+            <div class="application-form-agreement">
+                <p class="application-form-desc">
+                    By clicking on &ldquo;Send&rdquo; button, you agree to our
+                    <span>
+                        <a class="application-form-link" href="">Privacy Policy,</a>
+                    </span>
+                    and allow Promodo to use this information for marketing purposes.
+                </p>
+            </div>
+        </form>
+    </div>
 </section>
 <!-- #endregion -->
