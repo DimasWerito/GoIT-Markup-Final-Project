@@ -19,39 +19,39 @@
 
         <ul class="nav-items">
     <li class="nav-item">
-        <a href="#about" class="nav-link">About us</a>
+        <a href="#about" class="nav-link" aria-label="Section About us">About us</a>
     </li>
     <li class="nav-item">
-        <a href="#lessons" class="nav-link">Our lessons</a>
+        <a href="#lessons" class="nav-link" aria-label="section Our lessons">Our lessons</a>
     </li>
     <li class="nav-item">
-        <a href="#teachers" class="nav-link">Teachers</a>
+        <a href="#teachers" class="nav-link" aria-label="section Our teachers">Teachers</a>
     </li>
     <li class="nav-item">
-        <a href="#feedback" class="nav-link">Reviews</a>
+        <a href="#feedback" class="nav-link" aria-label="section Reviews">Reviews</a>
     </li>
     <li class="nav-item">
-        <a href="#application" class="nav-link">Contact us</a>
+        <a href="#application" class="nav-link" aria-label="section Contact us">Contact us</a>
     </li>
 </ul>
 
 <ul class="soc-items">
     <li class="soc-item">
-        <a href="https://www.facebook.com/goITclub/" class="soc-link" target="_blank">
+        <a href="https://www.facebook.com/goITclub/" class="soc-link" aria-label="Facebook" target="_blank">
             <svg class="icon">
                 <use href="/GoIT-Markup-Final-Project/assets/sprites-de0b1603.svg#facebook"></use>
             </svg>
         </a>
     </li>
     <li class="soc-item">
-        <a href="https://www.instagram.com/goitclub/ " class="soc-link" target="_blank">
+        <a href="https://www.instagram.com/goitclub/ " class="soc-link" aria-label="Instagram" target="_blank">
             <svg class="icon">
                 <use href="/GoIT-Markup-Final-Project/assets/sprites-de0b1603.svg#instagram"></use>
             </svg>
         </a>
     </li>
     <li class="soc-item">
-        <a href="https://www.youtube.com/c/GoIT" class="soc-link" target="_blank">
+        <a href="https://www.youtube.com/c/GoIT" class="soc-link" aria-label="Youtube" target="_blank">
             <svg class="icon">
                 <use href="/GoIT-Markup-Final-Project/assets/sprites-de0b1603.svg#youtube"></use>
             </svg>
@@ -60,7 +60,7 @@
 </ul>
 
 
-        <button type="button" class="burger-menu" onclick="toggleMenu('open')">
+        <button type="button" aria-label="Open menu" class="burger-menu" onclick="toggleMenu('open')">
             <svg class="burger-menu-icon">
                 <use href="/GoIT-Markup-Final-Project/assets/sprites-de0b1603.svg#burger32"></use>
             </svg>
@@ -105,10 +105,10 @@
 
         <h1 class="hero-title">Discover the joy of learning <span class="hero-title-accent">English</span> with us!</h1>
 
-        <a href="#application" class="hero-button">Leave an application</a>
+        <a href="#application" class="hero-button" aria-label="Leave an application">Leave an application</a>
 
         <div class="hero-scroll-down">
-            <a class="scroll-button" href="#footer">
+            <a class="scroll-button" href="#footer" aria-label="Scroll to bottom">
                 <svg class="scroll-icon" width="24" height="24">
                     <use href="/GoIT-Markup-Final-Project/assets/sprites-de0b1603.svg#icon-angle-small-left"></use>
                 </svg>
@@ -173,7 +173,9 @@
                     activities, boosting their conversational skills and confidence in using English.
                 </p>
                 <div class="lessons__wrap-btn">
-                    <a class="lessons__btn-main" href="#application">Leave an application</a>
+                    <a class="lessons__btn-main" href="#application" aria-label="Leave an application"
+                        >Leave an application</a
+                    >
                 </div>
             </li>
             <li class="lessons__card-lesson lessons__card-lesson--selected">
@@ -184,7 +186,9 @@
                     language - reading, writing, listening, and speaking. It is a set of basic knowledge and skills.
                 </p>
                 <div class="lessons__wrap-btn">
-                    <a class="lessons__btn-main" href="#application">Leave an application</a>
+                    <a class="lessons__btn-main" href="#application" aria-label="Leave an application"
+                        >Leave an application</a
+                    >
                 </div>
             </li>
             <li class="lessons__card-lesson">
@@ -195,7 +199,9 @@
                     specific language goals and challenges, offering personal feedback.
                 </p>
                 <div class="lessons__wrap-btn">
-                    <a class="lessons__btn-main" href="#application">Leave an application</a>
+                    <a class="lessons__btn-main" href="#application" aria-label="Leave an application"
+                        >Leave an application</a
+                    >
                 </div>
             </li>
         </ul>
@@ -239,7 +245,9 @@
                         </li>
                     </ul>
 
-                    <a href="#application" class="leave-application-btn">Leave an application</a>
+                    <a href="#application" class="leave-application-btn" aria-label="Leave an application"
+                        >Leave an application</a
+                    >
                 </div>
 
                 <picture class="img-books">
@@ -403,6 +411,7 @@
                 <div class="application-inputs">
                     <div class="application-form-field">
                         <input
+                            aria-label="Name"
                             class="application-form-input"
                             type="text"
                             name="user-name"
@@ -414,6 +423,7 @@
                     </div>
                     <div class="application-form-field">
                         <input
+                            aria-label="Email"
                             class="application-form-input"
                             type="email"
                             name="user-email"
@@ -424,6 +434,7 @@
                     </div>
                     <div class="application-form-field">
                         <input
+                            aria-label="Phone"
                             class="application-form-input"
                             type="tel"
                             name="user-tel"
@@ -435,6 +446,7 @@
                     </div>
                     <div class="application-form-field comment">
                         <textarea
+                            aria-label="Comment"
                             class="application-form-comment"
                             rows="4"
                             name="user-comment"
@@ -446,29 +458,29 @@
 
                 <h3 class="application-radio-title">Choose a teacher</h3>
                 <div class="application-radio">
-                    <input class="visually-hidden" type="radio" name="teacher" id="maria" value="Maria" checked />
-                    <label class="application-radio-label" for="maria">
+                    <input class="visually-hidden" type="radio" name="teacher" id="maria" value="Maria" aria-labelledby="check-label" checked />
+                    <label class="application-radio-label" for="maria" id="check-label">
                         <span class="application-radio-input">
                             <span class="radio-dot"> </span>
                         </span>
                         Maria
                     </label>
-                    <input class="visually-hidden" type="radio" name="teacher" id="artem" value="Artem" />
-                    <label class="application-radio-label" for="artem">
+                    <input class="visually-hidden" type="radio" name="teacher" id="artem" value="Artem" aria-labelledby="check-label" />
+                    <label class="application-radio-label" for="artem" id="check-label">
                         <span class="application-radio-input">
                             <span class="radio-dot"> </span>
                         </span>
                         Artem
                     </label>
-                    <input class="visually-hidden" type="radio" name="teacher" id="ilona" value="Ilona" />
-                    <label class="application-radio-label" for="ilona">
+                    <input class="visually-hidden" type="radio" name="teacher" id="ilona" value="Ilona" aria-labelledby="check-label" />
+                    <label class="application-radio-label" for="ilona" id="check-label">
                         <span class="application-radio-input">
                             <span class="radio-dot"> </span>
                         </span>
                         Ilona
                     </label>
-                    <input class="visually-hidden" type="radio" name="teacher" id="volodymyr" value="Volodymyr" />
-                    <label class="application-radio-label" for="volodymyr">
+                    <input class="visually-hidden" type="radio" name="teacher" id="volodymyr" value="Volodymyr" aria-labelledby="check-label" />
+                    <label class="application-radio-label" for="volodymyr" id="check-label">
                         <span class="application-radio-input">
                             <span class="radio-dot"> </span>
                         </span>
@@ -581,7 +593,7 @@
     <div class="container">
         <div class="footer-content">
             <address class="footer-contacts">
-                <a class="footer-logo" href="./index.html"
+                <a class="footer-logo" href="./index.html" aria-label="English Excellence"
                     >english<span class="footer-logo-accent">excellence</span>.</a
                 >
                 <ul class="footer-contact-list">
@@ -601,19 +613,21 @@
                 <nav>
                     <ul class="footer-nav-list">
                         <li class="footer-nav-item">
-                            <a href="#about" class="footer-nav-link">About us</a>
+                            <a href="#about" class="footer-nav-link" aria-label="Section About us">About us</a>
                         </li>
                         <li class="footer-nav-item">
-                            <a href="#lessons" class="footer-nav-link">Our lessons</a>
+                            <a href="#lessons" class="footer-nav-link" aria-label="section Our lessons">Our lessons</a>
                         </li>
                         <li class="footer-nav-item">
-                            <a href="#teachers" class="footer-nav-link">Teachers</a>
+                            <a href="#teachers" class="footer-nav-link" aria-label="section Our teachers">Teachers</a>
                         </li>
                         <li class="footer-nav-item">
-                            <a href="#feedback" class="footer-nav-link">Reviews</a>
+                            <a href="#feedback" class="footer-nav-link" aria-label="section Reviews">Reviews</a>
                         </li>
                         <li class="footer-nav-item">
-                            <a href="#application" class="footer-nav-link">Contact us</a>
+                            <a href="#application" class="footer-nav-link" aria-label="section Contact us"
+                                >Contact us</a
+                            >
                         </li>
                     </ul>
                 </nav>
@@ -621,21 +635,36 @@
             <div class="footer-socials">
                 <ul class="footer-socials-list">
                     <li class="footer-socials-item">
-                        <a href="https://www.facebook.com/goITclub/" class="footer-socials-link" target="_blank">
+                        <a
+                            href="https://www.facebook.com/goITclub/"
+                            class="footer-socials-link"
+                            aria-label="Facebook"
+                            target="_blank"
+                        >
                             <svg class="footer-socials-icon">
                                 <use href="/GoIT-Markup-Final-Project/assets/sprites-de0b1603.svg#facebook"></use>
                             </svg>
                         </a>
                     </li>
                     <li class="footer-socials-item">
-                        <a href="https://www.instagram.com/goitclub/" class="footer-socials-link" target="_blank">
+                        <a
+                            href="https://www.instagram.com/goitclub/"
+                            class="footer-socials-link"
+                            aria-label="Instagram"
+                            target="_blank"
+                        >
                             <svg class="footer-socials-icon">
                                 <use href="/GoIT-Markup-Final-Project/assets/sprites-de0b1603.svg#instagram"></use>
                             </svg>
                         </a>
                     </li>
                     <li class="footer-socials-item">
-                        <a href="https://www.youtube.com/c/GoIT" class="footer-socials-link" target="_blank">
+                        <a
+                            href="https://www.youtube.com/c/GoIT"
+                            class="footer-socials-link"
+                            aria-label="Youtube"
+                            target="_blank"
+                        >
                             <svg class="footer-socials-icon">
                                 <use href="/GoIT-Markup-Final-Project/assets/sprites-de0b1603.svg#youtube"></use>
                             </svg>
@@ -648,10 +677,10 @@
             <p class="footer-note-copyright">&copy;2023 English Excellence. All rights reserved.</p>
             <ul class="footer-note-list">
                 <li class="footer-note-item">
-                    <a class="footer-note-link" href="">Privacy Policy</a>
+                    <a class="footer-note-link" href="#" aria-label="Privacy Policy">Privacy Policy</a>
                 </li>
                 <li class="footer-note-item">
-                    <a class="footer-note-link" href="">Terms of Service</a>
+                    <a class="footer-note-link" href="#" aria-label="Terms of Service">Terms of Service</a>
                 </li>
             </ul>
         </div>
@@ -661,7 +690,7 @@
         <div class="menu-backdrop">
     <div class="menu">
         <div class="button-wrapper">
-            <button type="button" class="close-btn" onclick="toggleMenu();">
+            <button type="button" class="close-btn" aria-label="Close menu" onclick="toggleMenu();">
                 <svg class="close-btn-icon">
                     <use href="/GoIT-Markup-Final-Project/assets/sprites-de0b1603.svg#close"></use>
                 </svg>
@@ -669,39 +698,39 @@
         </div>
         <ul class="nav-items">
     <li class="nav-item">
-        <a href="#about" class="nav-link">About us</a>
+        <a href="#about" class="nav-link" aria-label="Section About us">About us</a>
     </li>
     <li class="nav-item">
-        <a href="#lessons" class="nav-link">Our lessons</a>
+        <a href="#lessons" class="nav-link" aria-label="section Our lessons">Our lessons</a>
     </li>
     <li class="nav-item">
-        <a href="#teachers" class="nav-link">Teachers</a>
+        <a href="#teachers" class="nav-link" aria-label="section Our teachers">Teachers</a>
     </li>
     <li class="nav-item">
-        <a href="#feedback" class="nav-link">Reviews</a>
+        <a href="#feedback" class="nav-link" aria-label="section Reviews">Reviews</a>
     </li>
     <li class="nav-item">
-        <a href="#application" class="nav-link">Contact us</a>
+        <a href="#application" class="nav-link" aria-label="section Contact us">Contact us</a>
     </li>
 </ul>
 
 <ul class="soc-items">
     <li class="soc-item">
-        <a href="https://www.facebook.com/goITclub/" class="soc-link" target="_blank">
+        <a href="https://www.facebook.com/goITclub/" class="soc-link" aria-label="Facebook" target="_blank">
             <svg class="icon">
                 <use href="/GoIT-Markup-Final-Project/assets/sprites-de0b1603.svg#facebook"></use>
             </svg>
         </a>
     </li>
     <li class="soc-item">
-        <a href="https://www.instagram.com/goitclub/ " class="soc-link" target="_blank">
+        <a href="https://www.instagram.com/goitclub/ " class="soc-link" aria-label="Instagram" target="_blank">
             <svg class="icon">
                 <use href="/GoIT-Markup-Final-Project/assets/sprites-de0b1603.svg#instagram"></use>
             </svg>
         </a>
     </li>
     <li class="soc-item">
-        <a href="https://www.youtube.com/c/GoIT" class="soc-link" target="_blank">
+        <a href="https://www.youtube.com/c/GoIT" class="soc-link" aria-label="Youtube" target="_blank">
             <svg class="icon">
                 <use href="/GoIT-Markup-Final-Project/assets/sprites-de0b1603.svg#youtube"></use>
             </svg>
