@@ -1,7 +1,7 @@
 /* #region Base styles */
 .feedback {
-    padding: 0 20px;
-    margin: 0 auto 80px;
+    padding: 0 20px 80px 20px;
+    margin: 0 auto;
     box-sizing: border-box;
 }
 /* #endregion Base styles */
@@ -109,8 +109,8 @@
 /* #region Media queries */
 @media screen and (min-width: 768px) {
     .feedback {
-        margin: 0 auto 100px;
-        padding: 0 32px;
+        margin: 0 auto;
+        padding: 0 32px 100px 32px;
     }
     .feedback-title {
         margin-bottom: 64px;
@@ -159,8 +159,8 @@
         max-width: 320px;
     }
     .feedback {
-        margin: 0 auto 150px;
-        padding: 0 128px;
+        margin: 0 auto;
+        padding: 0 128px 150px 128px;
     }
 }
 /* #endregion Media queries */

@@ -1,6 +1,6 @@
 .application {
-    padding: 0 20px;
-    margin: 0 auto 80px;
+    padding: 0 20px 80px 20px;
+    margin: 0 auto;
 }
 
 /* #region Title block */
@@ -230,7 +230,8 @@ input[type='radio']:hover + .application-radio-label > .application-radio-input 
 /* #region Media rules block*/
 @media screen and (min-width: 768px) {
     .application {
-        margin: 0 auto 100px;
+        margin: 0 auto;
+        padding-bottom: 100px;
     }
     .application-block {
         margin: 0 auto;
@@ -298,7 +299,8 @@ input[type='radio']:hover + .application-radio-label > .application-radio-input 
 
 @media screen and (min-width: 1280px) {
     .application {
-        margin: 0 auto 150px;
+        margin: 0 auto;
+        padding-bottom: 150px;
     }
     .application-block {
         display: flex;

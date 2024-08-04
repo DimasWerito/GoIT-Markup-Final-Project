@@ -1,14 +1,14 @@
 @import '../../node_modules/modern-normalize/modern-normalize.css';
 
 html {
-  scroll-behavior: smooth;
+    scroll-behavior: smooth;
 }
 
 body {
     padding: 0;
     margin: 0;
 
-    font-family: "Manrope", sans-serif;
+    font-family: 'Manrope', sans-serif;
     font-size: 14px;
     line-height: 1.71;
     font-weight: 400;
@@ -17,9 +17,8 @@ body {
 
 section,
 .section {
-    margin: 0 auto 150px;
+    margin: 0 auto;
     padding: 0;
-    width: 100vw;
     min-width: 320px;
     max-width: 375px;
 
@@ -43,4 +42,4 @@ section,
     clip-path: inset(100%);
     clip: rect(0 0 0 0);
     overflow: hidden;
-  }
+}

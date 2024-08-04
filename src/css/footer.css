@@ -10,7 +10,6 @@
     color: var(--color-white);
 }
 
-
 .footer a {
     text-decoration: none;
     color: inherit;
@@ -35,6 +34,10 @@
 
     margin: 0;
     padding: 40px 20px 20px;
+}
+
+address {
+    font-style: normal;
 }
 
 @media screen and (min-width: 768px) {
@@ -190,7 +193,6 @@
     display: flex;
     flex-direction: column;
 }
-
 
 @media screen and (min-width: 768px) {
     .footer-note {

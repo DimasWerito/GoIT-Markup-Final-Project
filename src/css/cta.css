@@ -1,18 +1,18 @@
 .cta {
-    margin: 0 auto 150px;
+    margin: 0 auto;
     width: 100%;
     min-width: 320px;
     max-width: 375px;
-    padding: 0 20px;
+    padding: 0 20px 80px 20px;
 
     @media screen and (min-width: 768px) {
         max-width: 768px;
-        padding: 0 32px;
+        padding: 0 32px 100px 32px;
     }
 
     @media screen and (min-width: 1280px) {
         max-width: 1280px;
-        padding: 0 64px;
+        padding: 0 64px 150px 64px;
     }
 }
 
