@@ -1,3 +1,30 @@
+.section.hero {
+    padding-bottom: 80px;
+
+    @media screen and (min-width: 768px) {
+        padding-bottom: 100px;
+    }
+
+    @media screen and (min-width: 1280px) {
+        padding-bottom: 96px;
+    }
+}
+
+.hero > .container {
+    position: relative;
+
+    height: 709px;
+    min-height: 280px;
+    max-width: 335px;
+    padding: 20px 14px 14px 20px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: start;
+    border-radius: 30px;
+}
+
 .hero-image {
     position: absolute;
     top: 0;
@@ -8,19 +35,6 @@
     z-index: -1;
     border-radius: 30px;
     overflow: hidden;
-}
-
-.hero-wrapper {
-    max-width: 1152px;
-    height: 629px;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    margin: 0 auto;
-    display: flex;
-    flex-direction: column;
-    padding: 164px 32px 32px 64px;
-    position: relative;
 }
 
 .hero-title {
@@ -64,6 +78,12 @@
 }
 
 .scroll-button {
+    width: 38px;
+    height: 38px;
+    position: absolute;
+    bottom: 14px;
+    right: 14px;
+
     display: flex;
     align-items: center;
     justify-content: center;
@@ -82,69 +102,40 @@
     background-color: #4dc274;
 }
 
-@media screen and (max-width: 767.999px) {
-    .hero {
-        padding: 0 20px 80px 20px;
-    }
+.hero-title {
+    color: white;
+    font-size: 38px;
+    line-height: 1.05;
+    max-width: 295px;
+    width: 100%;
+    margin-bottom: 40px;
+}
 
-    .hero-wrapper {
-        max-width: 100%;
-        height: 709px;
-        padding: 20px 14px 14px 20px;
-        display: flex;
-        flex-direction: column;
-        justify-content: end;
-        align-items: start;
-        border-radius: 30px;
-    }
+.hero-button {
+    margin: 0 0 58px;
+    padding: 14px;
+    width: 100%;
+    max-width: 313px;
+    height: 52px;
+    font-size: 14px;
+    line-height: 1.71;
+}
 
-    .hero-title {
-        color: white;
-        font-size: 38px;
-        line-height: 1.05;
-        max-width: 295px;
-        width: 100%;
-        margin-bottom: 40px;
-    }
+.hero-scroll-down {
+    margin-top: 20px;
+}
 
-    .hero-button {
-        margin: 0 0 58px;
-        padding: 14px;
-        width: 100%;
-        max-width: 313px;
-        height: 52px;
-        font-size: 14px;
-        line-height: 1.71;
-    }
-
-    .hero-scroll-down {
-        margin-top: 20px;
-    }
-
-    .scroll-button {
-        width: 38px;
-        height: 38px;
-        position: absolute;
-        bottom: 14px;
-        right: 14px;
-    }
-
-    .scroll-icon {
-        width: 20px;
-        height: 20px;
-    }
+.scroll-icon {
+    width: 20px;
+    height: 20px;
 }
 
 @media screen and (min-width: 768px) {
-    .hero {
-        padding: 0 32px 100px 32px;
-    }
-
-    .hero-wrapper {
+    .hero > .container {
         height: 857px;
+        max-width: 704px;
         padding: 260px 32px 32px 32px;
         border-radius: 30px;
-        width: 100%;
     }
 
     .hero-title {
@@ -152,11 +143,6 @@
         font-size: 60px;
     }
 
-    .scroll-button {
-        width: 38px;
-        height: 38px;
-    }
-
     .hero-button {
         font-size: 18px;
         width: 306px;
@@ -167,6 +153,8 @@
 
     .scroll-button {
         position: absolute;
+        width: 38px;
+        height: 38px;
         bottom: 32px;
         right: 32px;
     }
@@ -174,22 +162,19 @@
 
 @media screen and (min-width: 1280px) {
     .hero {
-        padding: 0 64px 96px 64px;
+        padding-bottom: 96px;
     }
 
-    .hero-wrapper {
+    .hero > .container {
+        height: 629px;
+        max-width: 1152px;
+        padding: 0 64px 96px 64px;
         border-radius: 30px;
-        width: 100%;
     }
 
     .hero-title {
         width: 564px;
         font-size: 60px;
-    }
-
-    .scroll-button {
-        width: 38px;
-        height: 38px;
     }
 
     .hero-button {
@@ -202,6 +187,8 @@
 
     .scroll-button {
         position: absolute;
+        width: 38px;
+        height: 38px;
         bottom: 32px;
         right: 32px;
     }
